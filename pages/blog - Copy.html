@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – RPA & Automation Insights | BHAR India</title>
+  <meta name="description" content="Explore BHAR India's blog for the latest insights on RPA, business automation, web development, digital transformation, and technology trends in India." />
+  <meta name="keywords" content="RPA blog India, automation insights, robotic process automation trends, what is RPA, RPA vs AI, invoice automation guide, digital transformation India, UiPath tips, business automation India, web development insights" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bharindia.com/pages/blog.html" />
+  <meta property="og:title" content="Blog – BHAR India | Automation & Technology Insights" />
+  <meta property="og:description" content="Latest articles on RPA, automation, web development, and business transformation from Blue Horizon Automation Research." />
+  <meta property="og:url" content="https://www.bharindia.com/pages/blog.html" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+  <!-- Blog post structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "BHAR India Blog",
+    "description": "Insights on RPA, automation, and digital transformation",
+    "url": "https://www.bharindia.com/pages/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Blue Horizon Automation Research",
+      "logo": { "@type": "ImageObject", "url": "https://www.bharindia.com/images/logo.png" }
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+        <img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">Blue Horizon</span>
+          <span class="brand-sub">Automation Research</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="services.html#rpa"><span class="icon">&#x1F916;</span> Automation Solutions</a>
+            <a href="services.html#webapp"><span class="icon">&#x1F310;</span> Web Applications</a>
+            <a href="services.html#consulting"><span class="icon">&#x1F4C8;</span> Business Consultancy</a>
+          </div></div>
+        </li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="products.html#crm"><span class="icon">&#x1F4BC;</span> Sales CRM</a>
+            <a href="products.html#brikwisz"><span class="icon">&#x1F3D7;&#xFE0F;</span> BrikWisz</a>
+            <a href="products.html#assets"><span class="icon">&#x1F4E6;</span> Asset Management</a>
+            <a href="products.html#invoice"><span class="icon">&#x1F9FE;</span> RPA Invoice</a>
+            <a href="products.html#insurance"><span class="icon">&#x1F6E1;&#xFE0F;</span> RPA Insurance</a>
+          </div></div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#x1F319;</button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <div class="mobile-section-label">Services</div>
+    <a href="services.html#rpa">&#x1F916; Automation Solutions</a>
+    <a href="services.html#webapp">&#x1F310; Web Applications</a>
+    <a href="services.html#consulting">&#x1F4C8; Business Consultancy</a>
+    <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Products</div>
+    <a href="products.html#crm">&#x1F4BC; Sales CRM</a>
+    <a href="products.html#brikwisz">&#x1F3D7;&#xFE0F; BrikWisz</a>
+    <a href="products.html#assets">&#x1F4E6; Asset Management</a>
+    <a href="products.html#invoice">&#x1F9FE; RPA Invoice</a>
+    <a href="products.html#insurance">&#x1F6E1;&#xFE0F; RPA Insurance</a>
+    <div class="mobile-divider"></div>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn-primary-mobile">Contact Us</a>
+  </div>
+</header>
+
+<main class="page-main">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <span>Blog</span>
+      </div>
+      <h1>Automation & Technology Blog</h1>
+      <p>Insights, guides, and case studies on RPA, automation, web development, and digital transformation in India.</p>
+    </div>
+  </div>
+
+  <!-- BLOG SECTION -->
+  <section class="section" aria-label="Blog Posts">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+
+      <!-- Filter & Search Row -->
+      <div class="blog-filter-row">
+        <!-- Search -->
+        <div class="blog-search" role="search">
+          <span aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="blogSearch"
+            placeholder="Search articles…"
+            aria-label="Search blog articles"
+          />
+        </div>
+        <!-- Filter Tags -->
+        <div class="filter-tags" role="group" aria-label="Filter by category">
+          <button class="filter-tag active" data-filter="all">All</button>
+          <button class="filter-tag" data-filter="rpa">RPA</button>
+          <button class="filter-tag" data-filter="webdev">Web Dev</button>
+          <button class="filter-tag" data-filter="consulting">Consulting</button>
+          <button class="filter-tag" data-filter="guide">Guides</button>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid" id="blogGrid">
+
+        <!-- Post 1 -->
+        <article class="blog-card reveal delay-1" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">🤖</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Dec 10, 2024</span>
+              <span>5 min read</span>
+            </div>
+            <h3>What is RPA? A Complete Guide for Indian Businesses</h3>
+            <p>
+              Robotic Process Automation (RPA) is transforming how Indian enterprises handle repetitive
+              tasks. Here's everything you need to know — from basics to advanced implementation strategies.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-what-is-rpa.html" class="read-more" aria-label="Read What is RPA article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card reveal delay-2" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">🧾</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Dec 5, 2024</span>
+              <span>7 min read</span>
+            </div>
+            <h3>How RPA Cuts Invoice Processing Time by 85% — A Real Case Study</h3>
+            <p>
+              We walk through how we automated end-to-end invoice processing for a finance company,
+              reducing manual effort from 40 hours/week to under 6 hours.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-invoice-automation.html" class="read-more" aria-label="Read invoice automation case study">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card reveal delay-3" data-category="guide">
+          <div class="blog-thumb" aria-hidden="true">🆚</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Guide</span>
+              <span>Nov 28, 2024</span>
+              <span>6 min read</span>
+            </div>
+            <h3>RPA vs AI vs ML: What's the Difference and Which Does Your Business Need?</h3>
+            <p>
+              Confused by RPA, AI, and ML? We break down the key differences, overlaps, and which
+              technology makes sense depending on your business problem.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-rpa-vs-ai-ml.html" class="read-more" aria-label="Read RPA vs AI vs ML article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="blog-card reveal delay-1" data-category="webdev">
+          <div class="blog-thumb" aria-hidden="true">🌐</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Web Dev</span>
+              <span>Nov 20, 2024</span>
+              <span>8 min read</span>
+            </div>
+            <h3>5 Signs Your Business Needs a Custom Web Application (Not an Off-the-Shelf Tool)</h3>
+            <p>
+              Ready-made SaaS tools don't always fit every business. We explore five clear signs that
+              it's time to invest in a custom-built web application for your operations.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-custom-web-app.html" class="read-more" aria-label="Read custom web app article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 5 -->
+        <article class="blog-card reveal delay-2" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">🛡️</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Nov 12, 2024</span>
+              <span>6 min read</span>
+            </div>
+            <h3>Top 10 RPA Use Cases in the Insurance Industry in India</h3>
+            <p>
+              From claims processing to KYC verification and policy issuance — RPA is reshaping how
+              Indian insurance companies operate. Here are the ten biggest automation wins.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-rpa-insurance.html" class="read-more" aria-label="Read RPA insurance use cases article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 6 -->
+        <article class="blog-card reveal delay-3" data-category="consulting">
+          <div class="blog-thumb" aria-hidden="true">📈</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Consulting</span>
+              <span>Oct 30, 2024</span>
+              <span>5 min read</span>
+            </div>
+            <h3>How to Build a Digital Transformation Roadmap for Your Indian SME</h3>
+            <p>
+              Digital transformation isn't just for large corporations. Here's a practical, step-by-step
+              guide for small and mid-size businesses in India to get started.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-digital-transformation.html" class="read-more" aria-label="Read digital transformation roadmap article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 7 -->
+        <article class="blog-card reveal delay-1" data-category="guide">
+          <div class="blog-thumb" aria-hidden="true">💰</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Guide</span>
+              <span>Oct 18, 2024</span>
+              <span>7 min read</span>
+            </div>
+            <h3>How to Calculate ROI for an RPA Project — A Practical Guide</h3>
+            <p>
+              Not sure if RPA is worth the investment? We walk you through a simple ROI framework
+              used to evaluate automation projects before committing any budget.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-rpa-roi-guide.html" class="read-more" aria-label="Read RPA ROI guide">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 8 -->
+        <article class="blog-card reveal delay-2" data-category="webdev">
+          <div class="blog-thumb" aria-hidden="true">📱</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Web Dev</span>
+              <span>Oct 5, 2024</span>
+              <span>6 min read</span>
+            </div>
+            <h3>Flutter vs React Native in 2024: Which Should Your Business Choose?</h3>
+            <p>
+              Building a mobile app for your business? We compare Flutter and React Native across
+              performance, cost, developer availability, and long-term maintainability.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-flutter-react-native.html" class="read-more" aria-label="Read Flutter vs React Native article">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Post 9 -->
+        <article class="blog-card reveal delay-3" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">📊</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Sep 22, 2024</span>
+              <span>5 min read</span>
+            </div>
+            <h3>GST Compliance Automation: How RPA Handles Indian Tax Requirements</h3>
+            <p>
+              GST compliance requires constant data accuracy. We explore how RPA bots automate
+              reconciliation, return filing, and vendor validation for Indian businesses.
+            </p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-gst-automation.html" class="read-more" aria-label="Read GST automation article">Read More →</a>
+          </div>
+        </article>
+
+      </div><!-- end blog-grid -->
+
+      <!-- Load More -->
+      <div style="text-align:center; margin-top:48px;" class="reveal">
+        <button class="btn btn-secondary btn-lg" onclick="this.textContent = 'No more posts to load'">
+          Load More Articles
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="section bg-section" aria-label="Newsletter">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Stay Ahead with Automation Insights</h2>
+        <p>Subscribe for monthly articles on RPA, digital transformation, and technology trends in India.</p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; max-width:480px; margin:0 auto; position:relative; z-index:1;">
+          <input
+            type="email"
+            placeholder="Your email address"
+            style="flex:1; padding:13px 20px; border-radius:50px; border:none; font-size:15px; min-width:220px; outline:none; font-family:var(--ff-body);"
+            aria-label="Newsletter email"
+          />
+          <button class="btn btn-white" style="white-space:nowrap;">Subscribe →</button>
+        </div>
+        <p style="margin-top:12px; font-size:12px; color:rgba(255,255,255,0.6); position:relative;">No spam, unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+
+        <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+          <img src="../images/logo.png" alt="BHAR India – Blue Horizon Automation Research" class="nav-logo-img"/>
+          <div class="nav-logo-text">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-sub">Automation Research</span>
+          </div>
+        </a>
+        <p>Delivering intelligent automation and software solutions that drive measurable business outcomes. Built for India, designed for scale.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.facebook.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
+          <a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="https://youtu.be/hpFmBTWisYc?si=Z8lbj3WQz3ssQkwE" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#rpa">Automation Solutions</a>
+        <a href="services.html#webapp">Web Applications</a>
+        <a href="services.html#consulting">Business Consultancy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="products.html#crm">Sales CRM</a>
+        <a href="products.html#brikwisz">BrikWisz</a>
+        <a href="products.html#assets">Asset Management</a>
+        <a href="products.html#invoice">RPA Invoice</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2019 Blue Horizon Automation Research. All rights reserved.</p>
+      <p>Made with ❤️ in India &nbsp;|&nbsp; <a href="mailto:customerdelight@bhar.co.in">customerdelight@bhar.co.in</a></p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top" title="Back to Top">↑</button>
+<script src="../js/theme.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/whatsapp-widget.js"></script>
+</body>
+</html>

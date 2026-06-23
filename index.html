@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Horizon Automation Research | RPA & Automation Solutions India – BHAR</title>
+  <meta name="description" content="BHAR India delivers world-class RPA solutions, web application development, and business consulting in India. Automate processes, boost efficiency, and drive digital transformation." />
+  <meta name="keywords" content="RPA solutions India, Robotic Process Automation India, business process automation India, web application development India, UiPath automation India, RPA company India, BHAR India, Blue Horizon Automation Research, invoice automation RPA, digital transformation India" />
+  <meta name="author" content="Blue Horizon Automation Research" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bharindia.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bharindia.com/" />
+  <meta property="og:title" content="Blue Horizon Automation Research | RPA & Automation Solutions India" />
+  <meta property="og:description" content="Leading RPA and automation solutions company in India. Automate processes, build web applications, and drive digital transformation." />
+  <meta property="og:image" content="https://www.bharindia.com/images/og-home.jpg" />
+  <meta property="og:site_name" content="BHAR India" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BHAR India | RPA & Automation Solutions" />
+  <meta name="twitter:description" content="Intelligent RPA, automation & web development solutions. Transforming businesses across India." />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Blue Horizon Automation Research","alternateName":"BHAR India","url":"https://www.bharindia.com","logo":"https://www.bharindia.com/images/logo.png","telephone":"+91-8722629900","email":"customerdelight@bhar.co.in","sameAs":["https://www.linkedin.com/company/blue-horizon-automation"],"serviceArea":{"@type":"Country","name":"India"}}
+  </script>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+    /* Partner logo pills — image version */
+    .partner-pill {
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 160px;
+      height: 90px;
+    }
+    .partner-logo-img {
+      max-height: 72px;
+      max-width: 160px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(20%);
+      opacity: 0.85;
+      transition: all 0.28s ease;
+    }
+    .partner-pill:hover .partner-logo-img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    .partners-marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+      mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+    }
+    .partners-track {
+      display: flex;
+      width: max-content;
+      animation: partner-marquee 28s linear infinite;
+      will-change: transform;
+    }
+    .partners-group {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-shrink: 0;
+      padding-right: 22px;
+    }
+    .partners-marquee:hover .partners-track {
+      animation-play-state: paused;
+    }
+    @keyframes partner-marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (max-width: 768px) {
+      .partners-track { animation-duration: 20s; }
+      .partners-group { gap: 14px; padding-right: 14px; }
+      .partner-pill { min-width: 140px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .partners-track { animation-play-state: paused; }
+    }
+    .hero-video-layer {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-video-layer::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, var(--bg) 0%, var(--bg) 18%, transparent 68%),
+        linear-gradient(180deg, var(--bg) 0%, transparent 18%, transparent 82%, var(--bg) 100%);
+    }
+    .hero-background-video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 64%;
+      opacity: 0.38;
+      filter: saturate(0.78) contrast(1.08);
+    }
+    [data-theme="dark"] .hero-background-video {
+      opacity: 0.22;
+      filter: saturate(0.65) brightness(0.72) contrast(1.12);
+    }
+    .hero-right.dashboard-dismissed {
+      opacity: 0 !important;
+      visibility: hidden;
+      transform: translateY(14px) !important;
+      pointer-events: none;
+      animation: none !important;
+      transition:
+        opacity 0.85s ease,
+        transform 0.85s ease,
+        visibility 0s linear 0.85s;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .testimonial-card {
+      position: relative;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .testimonial-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+    .testimonial-quote-mark {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      color: var(--accent);
+      font-family: Georgia, serif;
+      font-size: 48px;
+      line-height: 1;
+      opacity: 0.25;
+    }
+    .testimonial-text {
+      margin: 0 0 24px;
+      color: var(--text-sec);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    .testimonial-client {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border-hover);
+      border-radius: 50%;
+      background: var(--gradient-soft);
+      color: var(--primary);
+      font-size: 23px;
+    }
+    .testimonial-client h3 {
+      margin: 0 0 3px;
+      font-size: 15px;
+    }
+    .testimonial-client span {
+      color: var(--text-muted);
+      font-size: 12.5px;
+    }
+    .capability-switch {
+      width: min(100%, 460px);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin: 24px auto 30px;
+      padding: 5px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg2);
+    }
+    .capability-switch-btn {
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: var(--ff-body);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .capability-switch-btn:hover { color: var(--text); }
+    .capability-switch-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .automation-gallery-card[hidden] { display: none !important; }
+    @media (max-width: 768px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonial-card { padding: 24px; }
+      .hero-background-video {
+        object-position: 62% 64%;
+        opacity: 0.18;
+      }
+      .hero-video-layer::after {
+        background: linear-gradient(90deg, var(--bg) 0%, rgba(255, 255, 255, 0.55) 100%);
+      }
+      [data-theme="dark"] .hero-video-layer::after {
+        background: linear-gradient(90deg, var(--bg) 0%, rgba(7, 16, 30, 0.7) 100%);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-video-layer { display: none; }
+    }
+
+    /* Blue Horizon company information section */
+    .bhar-info-section {
+      margin: 64px 0 70px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 8px);
+      background:
+        radial-gradient(circle at top left, rgba(201, 96, 49, 0.12), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(31, 59, 122, 0.12), transparent 34%),
+        linear-gradient(135deg, var(--bg-card), var(--bg2));
+      box-shadow: var(--shadow-sm);
+    }
+    .bhar-info-section::before {
+      content: "";
+      position: absolute;
+      top: -110px;
+      right: -80px;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      background: rgba(201, 96, 49, 0.08);
+    }
+    .bhar-info-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+      gap: 38px;
+      align-items: center;
+      padding: 42px;
+    }
+    .bhar-logo-panel {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 34px 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.52);
+      box-shadow: var(--shadow-sm);
+    }
+    [data-theme="dark"] .bhar-logo-panel {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .bhar-main-logo {
+      width: min(100%, 190px);
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 14px 24px rgba(31, 59, 122, 0.18));
+    }
+    .bhar-logo-panel h3 {
+      margin: 0;
+      color: var(--primary);
+      font-size: clamp(22px, 2vw, 30px);
+      line-height: 1.15;
+    }
+    .bhar-logo-panel span {
+      display: block;
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .bhar-info-content h3 {
+      margin: 12px 0 12px;
+      font-size: clamp(28px, 3vw, 44px);
+      line-height: 1.12;
+    }
+    .bhar-info-content > p {
+      margin: 0 0 22px;
+      color: var(--text-sec);
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 760px;
+    }
+    .bhar-values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .bhar-value-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--bg-card);
+      transition: var(--transition);
+    }
+    .bhar-value-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-hover);
+      box-shadow: var(--shadow-sm);
+    }
+    .bhar-value-card strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--primary);
+      font-size: 15px;
+    }
+    .bhar-value-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+    .bhar-tagline-strip {
+      margin-top: 24px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(31, 59, 122, 0.1), rgba(201, 96, 49, 0.12));
+      color: var(--primary);
+      font-weight: 900;
+      font-size: clamp(20px, 2.4vw, 34px);
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+    @media (max-width: 992px) {
+      .bhar-info-inner {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+      .bhar-logo-panel {
+        min-height: auto;
+      }
+    }
+    @media (max-width: 640px) {
+      .bhar-info-section {
+        margin: 44px 0 50px;
+      }
+      .bhar-info-inner {
+        padding: 22px;
+      }
+      .bhar-values-grid {
+        grid-template-columns: 1fr;
+      }
+      .bhar-main-logo {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+
+      <!-- LOGO – real image -->
+      <a href="index.html" class="nav-logo" aria-label="BHAR India Home">
+        <img src="images/logo.png" alt="BHAR India – Blue Horizon Automation Research" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">Blue Horizon</span>
+          <span class="brand-sub">Automation Research</span>
+        </div>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html" class="active">Home</a></li>
+
+        <li class="has-dropdown">
+          <a href="pages/services.html">
+            Services
+            <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-inner">
+              <a href="pages/services.html#rpa"><span class="icon">🤖</span> Automation Solutions</a>
+              <a href="pages/services.html#webapp"><span class="icon">🌐</span> Web Applications</a>
+              <a href="pages/services.html#erp-implementation"><span class="icon">📊</span> ERP Implementation</a>
+              <a href="pages/services.html#consulting"><span class="icon">📈</span> Website Development</a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="pages/products.html">Products</a></li>
+        <li><a href="pages/pricing.html">Pricing</a></li>
+
+        
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle Theme">🌙</button>
+        <a href="pages/contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+    <a href="index.html">Home</a>
+    <div class="mobile-section-label">Services</div>
+    <a href="pages/services.html#rpa">🤖 Automation Solutions</a>
+    <a href="pages/services.html#webapp">🌐 Web Applications</a>
+    <a href="pages/services.html#erp-implementation">📊 ERP Implementation</a>
+    <a href="pages/services.html#consulting">📈 Website Development</a>
+    <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Products</div>
+    <a href="pages/products.html#sap-report">📊 SAP Report Generation</a>
+    <a href="pages/products.html#gst-calculation">🧮 GST Calculation</a>
+    <a href="pages/products.html#crm">💼 CRM &amp; Lead Management</a>
+    <a href="pages/products.html#clinic">🏥 Clinic Management</a>
+    <a href="pages/products.html#pos-captain">🧾 POS + Captain</a>
+    <a href="pages/products.html#retail-pos">🛒 POS System</a>
+    <a href="pages/products.html#sap">⚙️ Smart SAP Automation</a>
+    <a href="pages/products.html#invoice">📄 Invoice Processing</a>
+    <a href="pages/products.html#sales-erp">🔁 Sales to ERP</a>
+    <a href="pages/products.html#assets">📦 Asset Management</a>
+    <a href="pages/products.html#property">🏢 Property Dealer System</a>
+    <a href="pages/products.html#ekyc">🛡️ E-KYC Automation</a>
+    <div class="mobile-divider"></div>
+    <a href="pages/pricing.html">Pricing</a>
+   
+    <a href="pages/about.html">About Us</a>
+    <a href="pages/blog.html">Blog</a>
+    <a href="pages/contact.html" class="btn-primary-mobile">Contact Us</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    
+    <div class="hero-bg">
+      <div class="hero-video-layer" aria-hidden="true">
+        <video class="hero-background-video" autoplay muted loop playsinline preload="metadata" poster="robotics-automation-poster.jpg" tabindex="-1">
+          <source src="142898-781314377_medium.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Powering Progress Through Automation
+        </div>
+
+        <h1 class="hero-title">
+          Smarter Business.<br/>
+          Driven by<br/>
+          <span class="accent-word">Intelligent</span>
+          <span class="blue-word"> Automation.</span>
+        </h1>
+
+        <p class="hero-desc">
+         RPA solutions, custom web applications, and expert consulting — helping Indian businesses eliminate manual work, streamline operations, and grow with confidence.
+
+Since 2019, we have been delivering innovative software products and technology services to businesses across industries. With over 7 years of experience, our team specializes in intelligent automation, ERP solutions, AI-powered workflows, and scalable web applications that improve efficiency, reduce costs, and accelerate digital transformation. We are committed to building reliable, future-ready solutions that empower organizations to achieve sustainable growth.
+        </p>
+
+        <div class="hero-actions">
+          <a href="pages/services.html" class="btn btn-primary btn-lg">
+            Explore Services →
+          </a>
+          <a href="pages/contact.html" class="btn btn-secondary btn-lg">
+            Free Consultation
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-counter data-target="50" data-suffix="+">50+</span></div>
+            <div class="hero-stat-label">Projects Delivered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num copper"><span data-counter data-target="85" data-suffix="%">85%</span></div>
+            <div class="hero-stat-label">Process Time Saved</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-counter data-target="15" data-suffix="+">15+</span></div>
+            <div class="hero-stat-label">Partner Organizations</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num copper"><span data-counter data-target="25" data-suffix="+">25+</span></div>
+            <div class="hero-stat-label">Products Built</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (hidden on mobile) -->
+      <div class="hero-right" id="heroDashboard" aria-hidden="true">
+        <div class="hero-card-visual">
+          <div class="visual-header">
+            <div class="visual-dots"><span></span><span></span><span></span></div>
+            <span class="visual-title">Automation Dashboard</span>
+          </div>
+          <div class="visual-metrics">
+            <div class="metric-card">
+              <div class="metric-val copper">85%</div>
+              <div class="metric-lbl">Manual Tasks Reduced</div>
+              <span class="metric-trend">▲ Efficiency</span>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val blue">99.2%</div>
+              <div class="metric-lbl">Data Accuracy</div>
+              <span class="metric-trend">▲ Accuracy</span>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val">4×</div>
+              <div class="metric-lbl">Faster Processing</div>
+              <span class="metric-trend">▲ Speed</span>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val blue">4 mo</div>
+              <div class="metric-lbl">Avg. ROI Timeline</div>
+              <span class="metric-trend">▲ Returns</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BLUE HORIZON COMPANY INFO ═══════════ -->
+  <section class="section" id="blue-horizon-info">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <!-- Blue Horizon company information section -->
+      <section class="bhar-info-section reveal" aria-labelledby="bharInfoTitle">
+        <div class="bhar-info-inner">
+          <div class="bhar-logo-panel">
+            <img src="images/logo.png" alt="Blue Horizon Automation Research logo" class="bhar-main-logo" />
+            <h3>Blue Horizon</h3>
+            <span>Automation Research</span>
+          </div>
+
+          <div class="bhar-info-content">
+            <span class="section-tag">About Blue Horizon</span>
+            <h3 id="bharInfoTitle">Blue Horizon Automation Research Pvt. Limited</h3>
+            <p>
+              We build automation, software, ERP, CRM and web solutions that help businesses reduce manual work,
+              improve accuracy and move faster. Our team focuses on understanding real business processes deeply,
+              then delivering reliable systems that create measurable value for customers.
+            </p>
+
+            <div class="bhar-values-grid" aria-label="Blue Horizon values">
+              <div class="bhar-value-card">
+                <strong>Exceed Expectations</strong>
+                <p>We understand business processes and technologies, then deliver more than expected.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Get It Done</strong>
+                <p>We build working solutions, overcome obstacles and deliver exceptional results fast.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Quality Systems</strong>
+                <p>We aim high and build premium-quality systems that provide strong customer value.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Glass Door Approach</strong>
+                <p>We believe in candid, honest and respectful communication with customers and employees.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Dig Deep</strong>
+                <p>Research, insight, effort and domain knowledge help us deliver high-value solutions.</p>
+              </div>
+              <div class="bhar-value-card">
+                <strong>Focused</strong>
+                <p>We stay committed to customers, employees, continuous learning and experimentation.</p>
+              </div>
+            </div>
+
+            <div class="bhar-tagline-strip">Innovate. Automate. Elevate.</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ WHAT WE OFFER ═══════════ -->
+  <section class="section bg-section" id="services">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Automation &amp; Technology Services</h2>
+        <p class="section-desc">From robotic process automation and ERP implementation to full-stack web development — we bring intelligent technology that moves your business forward.</p>
+      </div>
+
+      <div class="offer-grid">
+        <article class="card card-top-line reveal delay-1">
+          <div class="card-icon">🤖</div>
+          <h3>Robotic Process Automation</h3>
+          <p>Automate repetitive, rule-based processes — data entry, document handling, invoice processing — with UiPath bots that integrate seamlessly with your existing ERP and CRM systems.</p>
+          <ul class="service-feature-list" style="margin-top:14px;">
+            <li class="service-feature-item">Invoice &amp; document processing</li>
+            <li class="service-feature-item">ERP &amp; CRM integration bots</li>
+            <li class="service-feature-item">OCR-powered data extraction</li>
+          </ul>
+          <a href="pages/services.html#rpa" class="card-link">Learn More →</a>
+        </article>
+
+        <article class="card card-top-line copper-line reveal delay-2">
+          <div class="card-icon copper-icon">🌐</div>
+          <h3>Web Application Development, Mini ERP</h3>
+          <p>Secure, scalable web applications designed to streamline operations. Leveraging modern frameworks and low-code platforms for system integration and real-time data insights.</p>
+          <ul class="service-feature-list" style="margin-top:14px;">
+            <li class="service-feature-item">Custom CRM &amp; ERP portals</li>
+            <li class="service-feature-item">Mobile-responsive Flutter apps</li>
+            <li class="service-feature-item">API integrations &amp; dashboards</li>
+          </ul>
+          <a href="pages/services.html#webapp" class="card-link" style="color:var(--accent);">Learn More →</a>
+        </article>
+
+        <article class="card card-top-line reveal delay-3">
+          <div class="card-icon">📊</div>
+          <h3>ERP Implementation</h3>
+          <p>Implementation of ERPNext, Tally ERP, Zoho, SAP, SAGE, Xero, and Odoo backed by 35+ years of hands-on experience in implementing ERP systems.</p>
+          <ul class="service-feature-list" style="margin-top:14px;">
+            <li class="service-feature-item">ERPNext, Tally ERP, Zoho &amp; SAP</li>
+            <li class="service-feature-item">SAGE, Xero &amp; Odoo implementation</li>
+            <li class="service-feature-item">35+ years of ERP experience</li>
+          </ul>
+          <a href="pages/services.html#erp-implementation" class="card-link">Learn More →</a>
+        </article>
+
+        <article class="card card-top-line copper-line reveal delay-3">
+          <div class="card-icon copper-icon">📈</div>
+          <h3>Website Development</h3>
+          <p>A Website can help you grow in your businsess. Get the website ready for your business and start getting the more customers.</p>
+          <ul class="service-feature-list" style="margin-top:14px;">
+            <li class="service-feature-item">Static Website</li>
+            <li class="service-feature-item">Dynamic Website</li>
+            <li class="service-feature-item">Semi Dynamic website.</li>
+          </ul>
+          <a href="pages/services.html#consulting" class="card-link">Learn More →</a>
+        </article>
+      </div>
+
+
+      <!-- Homepage-only image information section -->
+      <div class="automation-gallery-section reveal" id="automationShowcase">
+        <div class="automation-gallery-head">
+          <div>
+            <span class="section-tag">Automation Showcase</span>
+            <h3>Explore Our Technology Capabilities</h3>
+            <p>Click any image slot to view details. Replace the placeholder blocks with real images whenever they are ready.</p>
+          </div>
+        </div>
+
+        <div class="capability-switch" role="tablist" aria-label="Technology capability categories">
+          <button class="capability-switch-btn active" type="button" data-capability-filter="applications" role="tab" aria-selected="true">Applications</button>
+          <button class="capability-switch-btn" type="button" data-capability-filter="automation" role="tab" aria-selected="false">Automation</button>
+        </div>
+
+        <div class="automation-gallery-grid" aria-label="Automation showcase gallery">
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="CRM &amp; Lead Management"
+            data-gallery-subtitle="Convert leads into customers"
+            data-gallery-image="images/project1.jpeg"
+            data-gallery-desc="A complete CRM and lead management solution for businesses that need better control over customer relationships, sales follow-ups, deal pipelines, and revenue tracking. The system helps teams capture leads from multiple sources, assign them to the right users, manage every interaction, and track the journey from first inquiry to final conversion. It is suitable for sales teams, service businesses, real estate teams, institutes, and any organization that wants a structured follow-up process instead of scattered calls, spreadsheets, and manual reminders."
+            data-gallery-points="Lead capture and organized lead tracking from multiple sources|Sales pipeline stages for contacted, qualified, proposal, and won deals|Task and follow-up reminders so no opportunity is missed|Centralized customer communication history across calls, emails, and messages|Performance analytics for conversion rate, revenue, and team productivity|Mobile-friendly access for sales users and managers">
+            <div class="gallery-image-slot">
+              <img src="images/project1.jpeg" alt="CRM and Lead Management">
+            </div>
+            <div class="gallery-card-body">
+              <h4>CRM &amp; Lead Management</h4>
+              <p>Convert leads into customers</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="Clinic Management System"
+            data-gallery-subtitle="Complete healthcare management"
+            data-gallery-image="images/project2.jpeg"
+            data-gallery-desc="A clinic management platform designed to digitize daily healthcare operations such as patient registration, appointments, billing, prescriptions, medical records, staff management, and reports. It gives doctors and clinic admins one place to manage patient data, appointment schedules, follow-ups, pending payments, and treatment history. The system is useful for single clinics, multi-doctor clinics, physiotherapy centers, diagnostic centers, and small hospitals that want a cleaner workflow with better patient care and faster front-desk operations."
+            data-gallery-points="Patient registration with complete profile and visit history|Appointment booking, rescheduling, and reminder support|Electronic medical records for diagnosis, prescription, and treatment notes|Billing, invoicing, payment tracking, and pending dues management|Doctor, staff, and clinic-level dashboards with real-time insights|Secure cloud-based access from desktop and mobile devices">
+            <div class="gallery-image-slot">
+              <img src="images/project2.jpeg" alt="Clinic Management System">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Clinic Management</h4>
+              <p>Healthcare operations in one place</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="POS + Captain"
+            data-gallery-subtitle="Advanced POS with business control"
+            data-gallery-image="images/project3.jpeg"
+            data-gallery-desc="An advanced POS and Captain panel solution for restaurants, cafes, quick-service counters, and retail businesses that need strong billing control along with staff and operational visibility. The POS handles fast billing, payment collection, order tracking, staff roles, sales monitoring, customer analytics, and business reports. The Captain panel helps floor staff or order takers manage live orders and coordinate with billing or kitchen operations, giving owners better control over daily sales and service performance."
+            data-gallery-points="Advanced billing with cash, UPI, card, wallet, and split payment options|Captain panel for live order control and faster service flow|Staff and role management with permissions and accountability|Sales monitoring dashboard with orders, revenue, and average order value|Customer analytics to understand repeat behavior and purchase patterns|Receipt printing, reports, and real-time business visibility">
+            <div class="gallery-image-slot">
+              <img src="images/project3.jpeg" alt="POS and Captain System">
+            </div>
+            <div class="gallery-card-body">
+              <h4>POS + Captain</h4>
+              <p>Billing, orders, and staff control</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="POS Point of Sale"
+            data-gallery-subtitle="Fast retail billing system"
+            data-gallery-image="images/project4.jpeg"
+            data-gallery-desc="A point-of-sale system built for retail shops, grocery stores, counters, and small businesses that need quick billing, inventory control, multiple payment options, barcode support, and reliable receipt printing. It helps shop owners handle product sales, customer transactions, stock updates, low-stock alerts, daily reports, and multi-store operations from a clean dashboard. The system is designed to reduce billing time, minimize manual errors, and give business owners real-time clarity on sales and inventory."
+            data-gallery-points="Fast checkout and billing for retail counters|Barcode scanning and product search support|Inventory management with stock updates and low-stock alerts|Multiple payment options including cash, UPI, card, and wallet|Receipt printing and sale history reports|Multi-store, user, and role management from a centralized system">
+            <div class="gallery-image-slot">
+              <img src="images/project4.jpeg" alt="POS Point of Sale">
+            </div>
+            <div class="gallery-card-body">
+              <h4>POS System</h4>
+              <p>Retail billing and inventory control</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="automation"
+            data-gallery-title="Smart SAP Process Automation"
+            data-gallery-subtitle="Automate repetitive SAP work"
+            data-gallery-image="images/project5.jpeg"
+            data-gallery-desc="A Smart SAP automation solution for businesses that repeatedly perform data entry, report generation, uploads, validations, workflow approvals, and monitoring inside SAP. The automation captures requirements or triggers, runs predefined SAP tasks, validates data, completes transactions, and provides monitoring reports. It helps finance, operations, procurement, and back-office teams reduce manual effort, avoid repetitive errors, improve compliance, and complete routine SAP processes faster."
+            data-gallery-points="SAP data entry automation for repetitive transaction work|Automated report generation and scheduled report delivery|Workflow automation for approvals, validations, and status updates|Bulk data upload and processing with error handling|Real-time monitoring with logs, alerts, and execution status|Productivity, accuracy, compliance, and turnaround-time improvements">
+            <div class="gallery-image-slot">
+              <img src="images/project5.jpeg" alt="Smart SAP Process Automation">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Smart SAP Automation</h4>
+              <p>SAP tasks, reports, and workflows</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="automation"
+            data-gallery-title="Intelligent Invoice Processing"
+            data-gallery-subtitle="AI-OCR invoice automation"
+            data-gallery-image="images/project6.jpeg"
+            data-gallery-desc="An intelligent invoice processing solution that automates purchase invoice capture, data extraction, validation, exception handling, and ERP synchronization. It can process invoices received through email, portal uploads, or scanned documents, then extract important fields such as invoice number, date, vendor, GSTIN, amount, PO, and GRN details. The system validates invoice data against business rules and pushes clean, approved records into ERP systems, helping finance teams save time and reduce reconciliation delays."
+            data-gallery-points="Invoice capture from email, upload, scanned files, and PDFs|AI-OCR extraction for invoice number, vendor, date, tax, and amount fields|Automated validation against PO, GRN, GST, and master data|ERP sync support for SAP, Oracle, Tally, Dynamics, and other systems|Exception handling for mismatches, missing fields, and duplicate invoices|Improved compliance, faster reconciliation, and better cash-flow visibility">
+            <div class="gallery-image-slot">
+              <img src="images/project6.jpeg" alt="Intelligent Invoice Processing">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Invoice Processing</h4>
+              <p>Capture, validate, and sync invoices</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="automation"
+            data-gallery-title="Sales to ERP Workflow Automation"
+            data-gallery-subtitle="Order sync with ERP systems"
+            data-gallery-image="images/project7.jpeg"
+            data-gallery-desc="A sales-to-ERP workflow automation system that captures sales orders from the business application, validates the order data, transforms it into the correct ERP format, and transfers it into systems like SAP, Oracle, Tally, or Microsoft Dynamics. It removes manual data entry between sales and ERP teams, reduces order processing delays, and gives management real-time visibility of order status, failed transfers, sync success rate, and processing time."
+            data-gallery-points="Automatic capture of sales orders from sales systems or portals|Data validation for customer, item, amount, tax, and completeness checks|ERP integration with SAP, Oracle, Tally, Microsoft Dynamics, and other platforms|Real-time transfer status with synced, failed, and pending order tracking|Error reduction by removing duplicate manual entry|Workflow visibility for operations, finance, and management teams">
+            <div class="gallery-image-slot">
+              <img src="images/project7.jpeg" alt="Sales to ERP Workflow Automation">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Sales to ERP</h4>
+              <p>Order automation and ERP sync</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="Asset Management System"
+            data-gallery-subtitle="Track and manage business assets"
+            data-gallery-image="images/project8.jpeg"
+            data-gallery-desc="An asset management system for companies that need to track physical and digital assets, maintenance schedules, depreciation, asset location, ownership, QR or barcode identification, and reports. It gives a centralized view of active assets, assets under maintenance, asset value, depreciation, upcoming service schedules, and category-wise distribution. This helps organizations reduce downtime, improve asset utilization, maintain compliance records, and make smarter purchase or replacement decisions."
+            data-gallery-points="Centralized asset tracking with category, value, location, and status|Maintenance scheduling with upcoming, overdue, and completed service tracking|Depreciation management for financial and audit visibility|Barcode and QR support for quick asset identification|Detailed asset history, documents, and lifecycle records|Reports for utilization, downtime, maintenance cost, and compliance">
+            <div class="gallery-image-slot">
+              <img src="images/project8.jpeg" alt="Asset Management System">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Asset Management</h4>
+              <p>Lifecycle, maintenance, and reports</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="applications"
+            data-gallery-title="Property Dealer Management System"
+            data-gallery-subtitle="Simplify real estate operations"
+            data-gallery-image="images/project9.jpeg"
+            data-gallery-desc="A property dealer management system built for real estate consultants, brokers, builders, and property teams who need one platform for property listings, lead tracking, site visits, bookings, documents, payments, and customer follow-ups. It helps teams manage available properties, upload property details and images, track inquiries, schedule visits, update booking status, and store important documents securely. The dashboard gives business owners visibility into leads, visits, bookings, revenue, and conversion performance."
+            data-gallery-points="Property listing management with images, pricing, availability, and details|Lead tracking from inquiry to site visit, proposal, booking, and closure|Site visit scheduling with customer and agent coordination|Booking, payment plan, agreement, and status management|Secure document storage for agreements, NOCs, customer files, and property papers|Real-time dashboard for revenue, leads, bookings, visits, and business insights">
+            <div class="gallery-image-slot">
+              <img src="images/project9.jpeg" alt="Property Dealer Management System">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Property Dealer System</h4>
+              <p>Listings, leads, visits, and bookings</p>
+            </div>
+          </button>
+
+          <button class="automation-gallery-card" type="button" data-capability-category="automation"
+            data-gallery-title="E-KYC Government Portal Automation"
+            data-gallery-subtitle="Secure digital verification"
+            data-gallery-image="images/project10.jpeg"
+            data-gallery-desc="An E-KYC government portal automation solution for organizations that need faster customer onboarding, secure identity verification, consent-based authentication, document validation, and compliance-ready audit trails. The workflow can capture customer details and documents, authenticate consent, verify information through government portals, validate results, and mark the KYC process as completed. It is useful for financial services, insurance, onboarding teams, compliance departments, and businesses that handle high-volume verification work."
+            data-gallery-points="Identity verification using Aadhaar, PAN, voter ID, and other documents|Government portal integration with UIDAI, NSDL, CERSAI, DigiLocker, eSign, and related services|Consent-based secure authentication and controlled data access|Automated validation to reduce turnaround time and manual effort|Audit logs, status tracking, and compliance-ready reporting|Reduced fraud risk through official-source verification and structured workflow">
+            <div class="gallery-image-slot">
+              <img src="images/project10.jpeg" alt="E-KYC Government Portal Automation">
+            </div>
+            <div class="gallery-card-body">
+              <h4>E-KYC Automation</h4>
+              <p>Government portal verification flow</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage-only automation showcase modal -->
+  <div class="modal-overlay automation-info-modal" id="automationGalleryModal" role="dialog" aria-modal="true" aria-labelledby="automationGalleryTitle">
+    <div class="modal-content automation-info-content">
+      <button class="modal-close" id="automationGalleryClose" aria-label="Close automation information">✕</button>
+      <div class="automation-modal-image" id="automationGalleryImageWrap">
+        <img src="images/project1.jpeg" alt="CRM and Lead Management">
+      </div>
+      <div class="modal-header">
+        <span class="section-tag" id="automationGallerySubtitle">Automation Detail</span>
+        <h2 id="automationGalleryTitle">Automation Title</h2>
+      </div>
+      <div class="modal-body">
+        <p id="automationGalleryDesc"></p>
+        <h3>Key Highlights</h3>
+        <ul class="automation-modal-points" id="automationGalleryPoints"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ WHY CHOOSE US ═══════════ -->
+  <section class="section" id="why">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-features reveal-left">
+          <span class="section-tag">Why BHAR?</span>
+          <h2 class="section-title" style="margin-bottom:28px;">What Sets Blue Horizon Apart</h2>
+          <div class="why-feature">
+            <div class="why-icon">🎯</div>
+            <div>
+              <h4>Tailored, Not Template</h4>
+              <p>Every automation tool and web app is designed specifically for your business — no generic off-the-shelf approach.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">💡</div>
+            <div>
+              <h4>Innovation at the Core</h4>
+              <p>We stay ahead — RPA, AI, low-code — so you always get future-ready solutions that keep you competitive.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">🔄</div>
+            <div>
+              <h4>End-to-End Partnership</h4>
+              <p>From concept to deployment and beyond — smooth implementation, ongoing maintenance, and swift issue resolution.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-icon">🏆</div>
+            <div>
+              <h4>Proven Outcomes</h4>
+              <p>Our solutions have delivered measurable reductions in manual workload, processing time, and operational cost.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-visual reveal-right">
+          <h3>Our Delivery Process</h3>
+          <p>From idea to live solution — in four clear steps</p>
+          <div class="process-list">
+            <div class="process-list-item">
+              <div class="pl-circle">1</div>
+              <div><h4>Discovery &amp; Analysis</h4><p>We assess processes, map pain points, and identify automation opportunities.</p></div>
+            </div>
+            <div class="process-list-item">
+              <div class="pl-circle">2</div>
+              <div><h4>Strategy &amp; Design</h4><p>Tailored roadmap with tech stack, timeline, and ROI metrics clearly defined.</p></div>
+            </div>
+            <div class="process-list-item">
+              <div class="pl-circle">3</div>
+              <div><h4>Build &amp; Integrate</h4><p>Agile development with regular demos, UAT, and seamless system integration.</p></div>
+            </div>
+            <div class="process-list-item">
+              <div class="pl-circle">4</div>
+              <div><h4>Deploy &amp; Scale</h4><p>Production launch, team training, performance monitoring, and ongoing support.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ORGANIZATIONS WE WORK WITH ═══════════ -->
+  <section class="section bg-section" id="clients">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Trusted By</span>
+        <h2 class="section-title">Organizations We Work With</h2>
+        <p class="section-desc">Partnering with leading institutions and enterprises across India to deliver measurable impact.</p>
+      </div>
+      <div class="partners-marquee reveal" aria-label="Organizations we work with">
+        <div class="partners-track">
+          <div class="partners-group">
+            <div class="partner-pill"><img src="images/partner-iit-bombay.png" alt="IIT Bombay" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-vv-group.png" alt="VV Group" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-gtcfi.png" alt="GT Cargo Fittings India" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-janus.png" alt="Janus International" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-super-sports.png" alt="Super Sports Park" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-orthocare.png" alt="Orthocare Physiotherapy" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/mercury_hospital.png" alt="Mercury Hospital" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/inorbit.jpeg" alt="Inorbit" class="partner-logo-img" /></div>
+          </div>
+          <div class="partners-group" aria-hidden="true">
+            <div class="partner-pill"><img src="images/partner-iit-bombay.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-vv-group.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-gtcfi.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-janus.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-super-sports.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/partner-orthocare.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/mercury_hospital.png" alt="" class="partner-logo-img" /></div>
+            <div class="partner-pill"><img src="images/inorbit.jpeg" alt="" class="partner-logo-img" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CLIENT TESTIMONIALS ═══════════ -->
+  <section class="section" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Client Feedback</span>
+        <h2 class="section-title" id="testimonials-heading">What Our Clients Say</h2>
+        <p class="section-desc">Feedback from teams that worked with us to simplify operations, improve visibility, and automate everyday processes.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal delay-1">
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">The BHAR team understood our workflow before suggesting a solution. The final system is practical, easy for our team to use, and gives us much better visibility over daily operations.</p>
+          <div class="testimonial-client">
+            <div class="testimonial-avatar" role="img" aria-label="Client profile icon">&#x1F464;</div>
+            <div>
+              <h3>Operations Lead</h3>
+              <span>Business Operations</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal delay-2">
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">The automation removed repetitive manual steps from our reporting process and made the output more consistent. Their communication was clear throughout implementation and testing.</p>
+          <div class="testimonial-client">
+            <div class="testimonial-avatar" role="img" aria-label="Client profile icon">&#x1F464;</div>
+            <div>
+              <h3>Finance Manager</h3>
+              <span>Finance &amp; Reporting</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal delay-1">
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">Our appointments, records, and follow-ups are now far more organized. The team listened carefully to our requirements and delivered a system that fits the way our staff actually works.</p>
+          <div class="testimonial-client">
+            <div class="testimonial-avatar" role="img" aria-label="Client profile icon">&#x1F464;</div>
+            <div>
+              <h3>Clinic Administrator</h3>
+              <span>Healthcare Operations</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal delay-2">
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">The new application makes billing, stock tracking, and sales review much simpler. It is straightforward for the staff and gives management the information needed without extra manual work.</p>
+          <div class="testimonial-client">
+            <div class="testimonial-avatar" role="img" aria-label="Client profile icon">&#x1F464;</div>
+            <div>
+              <h3>Business Owner</h3>
+              <span>Retail &amp; Sales</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="section">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Ready to Automate Your Business?</h2>
+        <p>Get in touch and discover what's possible when intelligent RPA meets your goals.</p>
+        <div class="cta-btns">
+          <a href="pages/contact.html" class="btn btn-white btn-lg">Contact Us Today</a>
+          <a href="pages/services.html" class="btn btn-ghost btn-lg">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" aria-label="BHAR India Home">
+          <img src="images/logo.png" alt="Image India Logo" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-sub">Automation Research</span>
+          </div>
+        </a>
+        <p>Delivering intelligent automation and software solutions that drive measurable business outcomes. Built for India, designed for scale.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.facebook.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
+          <a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="https://youtu.be/hpFmBTWisYc?si=Z8lbj3WQz3ssQkwE" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="pages/services.html#rpa">Automation Solutions</a>
+        <a href="pages/services.html#webapp">Web Applications</a>
+        <a href="pages/services.html#erp-implementation">ERP Implementation</a>
+        <a href="pages/services.html#consulting">Website Development</a>
+        <a href="pages/projects.html">Our Projects</a>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="pages/products.html#sap-report">SAP Report Generation</a>
+        <a href="pages/products.html#gst-calculation">GST Calculation</a>
+        <a href="pages/products.html#crm">CRM &amp; Lead Management</a>
+        <a href="pages/products.html#clinic">Clinic Management</a>
+        <a href="pages/products.html#pos-captain">POS + Captain</a>
+        <a href="pages/products.html#retail-pos">POS System</a>
+        <a href="pages/products.html#sap">Smart SAP Automation</a>
+        <a href="pages/products.html#invoice">Invoice Processing</a>
+        <a href="pages/products.html#sales-erp">Sales to ERP</a>
+        <a href="pages/products.html#assets">Asset Management</a>
+        <a href="pages/products.html#property">Property Dealer System</a>
+        <a href="pages/products.html#ekyc">E-KYC Automation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/contact.html">Contact Us</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2019 Blue Horizon Automation Research. All rights reserved.</p>
+      <p>Made with ❤️ in India &nbsp;|&nbsp; <a href="mailto:customerdelight@bhar.co.in">customerdelight@bhar.co.in</a></p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top" title="Back to Top">↑</button>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/whatsapp-widget.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.capability-switch-btn');
+    const capabilityCards = document.querySelectorAll('.automation-gallery-card[data-capability-category]');
+
+    function showCapability(category) {
+      filterButtons.forEach(function (button) {
+        const active = button.dataset.capabilityFilter === category;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-selected', String(active));
+      });
+
+      capabilityCards.forEach(function (card) {
+        card.hidden = card.dataset.capabilityCategory !== category;
+      });
+    }
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        showCapability(button.dataset.capabilityFilter);
+      });
+    });
+
+    showCapability('applications');
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dashboard = document.getElementById('heroDashboard');
+    if (!dashboard || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    window.setTimeout(function () {
+      dashboard.classList.add('dashboard-dismissed');
+
+      window.setTimeout(function () {
+        dashboard.hidden = true;
+      }, 900);
+    }, 100);
+  });
+</script>
+</body>
+</html>

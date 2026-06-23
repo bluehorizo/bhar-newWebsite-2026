@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – SAP Reports, GST Calculation, CRM, Clinic, POS & Automation | BHAR India</title>
+  <meta name="description" content="Explore BHAR India's products: SAP Report Generation, GST Calculation, CRM & Lead Management, Clinic Management, POS, SAP Automation, Invoice Processing, Asset Management, Property Dealer System, and E-KYC Automation." />
+  <meta name="keywords" content="SAP report generation, GST calculation software India, CRM software India, clinic management system, POS software India, SAP automation, invoice processing automation, sales to ERP workflow, asset management software, property dealer software, e-KYC automation India, business software India" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bharindia.com/pages/products.html" />
+  <meta property="og:title" content="Products – BHAR India | Business Software Solutions" />
+  <meta property="og:description" content="Ready-to-deploy software products for CRM, clinic operations, POS billing, SAP automation, invoice processing, assets, property teams, and E-KYC workflows." />
+  <meta property="og:url" content="https://www.bharindia.com/pages/products.html" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    .product-tab-btn.featured-product {
+      border-color: var(--accent);
+      background: var(--gradient-soft);
+      color: var(--text);
+      box-shadow: 0 4px 14px rgba(196, 98, 45, 0.13);
+    }
+    .product-tab-btn.featured-product::after {
+      content: "Featured";
+      margin-left: auto;
+      padding: 2px 7px;
+      border-radius: 20px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .product-tab-btn.featured-product:hover {
+      border-color: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+    .product-tab-btn.featured-product.active {
+      background: var(--gradient-warm);
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(196, 98, 45, 0.28);
+    }
+    .product-tab-btn.featured-product.active::after {
+      background: #fff;
+      color: var(--accent-dark);
+    }
+    .product-category-switch {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 12px;
+      padding: 5px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg2);
+    }
+    .product-category-btn {
+      padding: 9px 7px;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: var(--ff-body);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.25;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .product-category-btn:hover { color: var(--text); }
+    .product-category-btn.active {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .product-tab-group {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .product-tab-group.active { display: flex; }
+    .product-group-label {
+      margin: 4px 2px 2px;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+        <img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">Blue Horizon</span>
+          <span class="brand-sub">Automation Research</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="services.html#rpa"><span class="icon">&#x1F916;</span> Automation Solutions</a>
+            <a href="services.html#webapp"><span class="icon">&#x1F310;</span> Web Applications</a>
+            <a href="services.html#consulting"><span class="icon">&#x1F4C8;</span>Website Development</a>
+          </div></div>
+        </li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#x1F319;</button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <div class="mobile-section-label">Services</div>
+    <a href="services.html#rpa">&#x1F916; Automation Solutions</a>
+    <a href="services.html#webapp">&#x1F310; Web Applications</a>
+    <a href="services.html#consulting">&#x1F4C8; Business Consultancy</a>
+    <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Products</div>
+    <a href="products.html#sap-report">&#x1F4CA; SAP Report Generation</a>
+    <a href="products.html#gst-calculation">&#x1F9EE; GST Calculation</a>
+    <a href="products.html#crm">&#x1F4BC; CRM &amp; Lead Management</a>
+    <a href="products.html#clinic">&#x1F3E5; Clinic Management</a>
+    <a href="products.html#pos-captain">&#x1F9FE; POS + Captain</a>
+    <a href="products.html#retail-pos">&#x1F6D2; POS System</a>
+    <a href="products.html#sap">&#x2699;&#xFE0F; Smart SAP Automation</a>
+    <a href="products.html#invoice">&#x1F4C4; Invoice Processing</a>
+    <a href="products.html#sales-erp">&#x1F501; Sales to ERP</a>
+    <a href="products.html#assets">&#x1F4E6; Asset Management</a>
+    <a href="products.html#property">&#x1F3E2; Property Dealer System</a>
+    <a href="products.html#ekyc">&#x1F6E1;&#xFE0F; E-KYC Automation</a>
+    <div class="mobile-divider"></div>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn-primary-mobile">Contact Us</a>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a><span>›</span><span>Products</span>
+      </div>
+      <h1>Our Products</h1>
+      <p>Purpose-built software products ready to deploy and scale with your business — from CRM to full RPA automation suites.</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS TABS LAYOUT -->
+  <section class="section" aria-label="Products">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="products-tabs-layout">
+        <!-- Tab Nav -->
+        <nav class="product-tabs-nav" aria-label="Product Navigation">
+          <div class="product-category-switch" role="tablist" aria-label="Product Categories">
+            <button class="product-category-btn active" type="button" data-category-target="applications" role="tab" aria-selected="true">Applications</button>
+            <button class="product-category-btn" type="button" data-category-target="automation" role="tab" aria-selected="false">Automation</button>
+          </div>
+
+          <div class="product-tab-group active" data-product-category="applications">
+            <div class="product-group-label">Business Applications</div>
+            <button class="product-tab-btn active" data-tab="assets">📦 Asset Management</button>
+            <button class="product-tab-btn" data-tab="property">🏢 Property Dealer System</button>
+            <button class="product-tab-btn" data-tab="crm">💼 CRM &amp; Lead Management</button>
+            <button class="product-tab-btn" data-tab="clinic">🏥 Clinic Management</button>
+            <button class="product-tab-btn" data-tab="pos-captain">🧾 POS + Captain</button>
+            <button class="product-tab-btn" data-tab="retail-pos">🛒 POS System</button>
+          </div>
+
+          <div class="product-tab-group" data-product-category="automation">
+            <div class="product-group-label">Automation Projects</div>
+            <button class="product-tab-btn featured-product" data-tab="sap-report">📊 IIT POWAI (SAP)</button>
+            <button class="product-tab-btn featured-product" data-tab="gst-calculation">🧮 IIT POWAI (GST)</button>
+            <button class="product-tab-btn" data-tab="sap">⚙️ Smart SAP Automation</button>
+            <button class="product-tab-btn" data-tab="invoice">📄 Invoice Processing</button>
+            <button class="product-tab-btn" data-tab="sales-erp">🔁 Sales to ERP</button>
+            <button class="product-tab-btn" data-tab="ekyc">🛡️ E-KYC Automation</button>
+          </div>
+        </nav>
+
+        <!-- Tab Panels -->
+        <div>
+          <div class="product-panel" id="panel-sap-report" aria-label="SAP Report Generation">
+            <div class="product-panel-header">
+              <span class="section-tag">SAP Report Generation</span>
+              <h2 id="sap-report">SAP Report Generation</h2>
+              <p>An automated SAP reporting solution for teams that regularly download, prepare, consolidate, and share operational or financial reports. It runs defined SAP transactions, applies business filters, exports data, formats the output, and delivers accurate reports on schedule with less manual effort.</p>
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Automated SAP Extraction</h4>
+                <p>Run selected SAP transactions and extract required business data automatically.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Scheduled Reports</h4>
+                <p>Generate daily, weekly, monthly, or period-end reports at defined times.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Custom Filters &amp; Variants</h4>
+                <p>Apply company code, plant, date, customer, vendor, and other report filters.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Excel &amp; PDF Output</h4>
+                <p>Export clean, formatted reports in business-ready Excel or PDF formats.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Automatic Distribution</h4>
+                <p>Send completed reports to departments and stakeholders through email or shared folders.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Validation &amp; Run Logs</h4>
+                <p>Validate report completeness and maintain execution logs for tracking and audit.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Finance &amp; MIS</span>
+                <span class="use-case-chip">Sales Reporting</span>
+                <span class="use-case-chip">Purchase Teams</span>
+                <span class="use-case-chip">Inventory Reports</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Management Dashboards</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -&gt;</a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-gst-calculation" aria-label="GST Calculation">
+            <div class="product-panel-header">
+              <span class="section-tag">GST Calculation</span>
+              <h2 id="gst-calculation">GST Calculation</h2>
+              <p>A GST calculation and reconciliation solution that helps businesses calculate tax accurately across sales and purchase transactions. It supports intra-state and inter-state tax rules, HSN or SAC-based rates, input tax credit checks, invoice-level validation, and structured summaries for GST review and return preparation.</p>
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>CGST, SGST &amp; IGST</h4>
+                <p>Apply the correct tax type automatically based on the place of supply.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>HSN &amp; SAC Tax Rates</h4>
+                <p>Calculate GST using configurable product and service classification rates.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Invoice Validation</h4>
+                <p>Check GSTIN, taxable value, tax rate, tax amount, and invoice totals for errors.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Input Tax Credit Review</h4>
+                <p>Track eligible and ineligible input tax credit across purchase transactions.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>GST Reconciliation</h4>
+                <p>Compare purchase records with available GST data and identify mismatches.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>GST Summary Reports</h4>
+                <p>Prepare clear tax summaries for review, accounting, and return filing support.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Finance Teams</span>
+                <span class="use-case-chip">Accounts Departments</span>
+                <span class="use-case-chip">Retail &amp; Distribution</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Service Businesses</span>
+                <span class="use-case-chip">Tax Consultants</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -&gt;</a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-crm" aria-label="CRM & Lead Management">
+            <div class="product-panel-header">
+              <span class="section-tag">CRM & Lead Management</span>
+              <h2 id="crm">CRM & Lead Management</h2>
+              <p>A complete CRM platform for teams that want to capture leads, manage follow-ups, track deal stages, and improve conversion. It keeps calls, tasks, notes, customer activity, revenue opportunities, and sales performance in one organized dashboard instead of scattered spreadsheets and manual reminders.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project1.jpeg" alt="CRM & Lead Management" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Lead Capture</h4>
+                <p>Capture leads from web forms, calls, WhatsApp, campaigns, and manual entries.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Pipeline Tracking</h4>
+                <p>Move leads through stages like new, contacted, qualified, proposal, won, and lost.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Follow-up System</h4>
+                <p>Assign tasks, reminders, and next actions so no lead gets missed.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Customer Communication</h4>
+                <p>Maintain customer history with notes, calls, email, and message activity.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Sales Analytics</h4>
+                <p>Track revenue, conversion rate, open deals, won deals, and team performance.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Mobile Access</h4>
+                <p>Give sales users and managers quick access from desktop and mobile.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Real Estate</span>
+                <span class="use-case-chip">B2B Sales Teams</span>
+                <span class="use-case-chip">Education</span>
+                <span class="use-case-chip">Insurance</span>
+                <span class="use-case-chip">Service Businesses</span>
+                <span class="use-case-chip">SMEs & Startups</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-clinic" aria-label="Clinic Management System">
+            <div class="product-panel-header">
+              <span class="section-tag">Clinic Management System</span>
+              <h2 id="clinic">Clinic Management System</h2>
+              <p>A clinic management system for doctors, front-desk teams, physiotherapy centers, diagnostic centers, and small hospitals. It digitizes patient registration, appointment scheduling, EMR records, billing, prescriptions, reports, and daily clinic operations so the team can serve patients faster with fewer manual mistakes.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project2.jpeg" alt="Clinic Management System" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Patient Registration</h4>
+                <p>Create complete patient profiles with contact details, history, and visit records.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Appointment Scheduling</h4>
+                <p>Book, reschedule, and manage doctor-wise appointments with reminders.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Electronic Medical Records</h4>
+                <p>Store diagnosis, treatment notes, prescriptions, and medical history securely.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Billing & Payments</h4>
+                <p>Generate invoices, track pending dues, and manage clinic revenue.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Prescription Management</h4>
+                <p>Create and print prescriptions digitally with repeat visit support.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Reports Dashboard</h4>
+                <p>View appointments, patients, revenue, pending payments, and clinic performance.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Clinics</span>
+                <span class="use-case-chip">Doctors</span>
+                <span class="use-case-chip">Physiotherapy Centers</span>
+                <span class="use-case-chip">Diagnostic Centers</span>
+                <span class="use-case-chip">Small Hospitals</span>
+                <span class="use-case-chip">Healthcare Startups</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-pos-captain" aria-label="POS + Captain">
+            <div class="product-panel-header">
+              <span class="section-tag">POS + Captain</span>
+              <h2 id="pos-captain">POS + Captain</h2>
+              <p>An advanced POS and Captain panel system for restaurants, cafes, food counters, and service businesses that need fast billing along with staff and order control. It supports billing, live orders, staff roles, payment modes, sales reports, customer analytics, and operational dashboards for better day-to-day control.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project3.jpeg" alt="POS + Captain" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Advanced Billing</h4>
+                <p>Create fast bills with item quantity, discounts, taxes, and multiple payment modes.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Captain Panel</h4>
+                <p>Let floor staff take and manage orders from mobile or tablet.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Staff & Role Management</h4>
+                <p>Control access for cashiers, captains, managers, and owners.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Sales Monitoring</h4>
+                <p>Track orders, revenue, average order value, and daily performance.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Customer Analytics</h4>
+                <p>Understand repeat customers, purchase patterns, and service trends.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Receipt & Reports</h4>
+                <p>Print receipts and view detailed business reports anytime.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Restaurants</span>
+                <span class="use-case-chip">Cafes</span>
+                <span class="use-case-chip">Food Courts</span>
+                <span class="use-case-chip">QSR Counters</span>
+                <span class="use-case-chip">Cloud Kitchens</span>
+                <span class="use-case-chip">Retail Counters</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-retail-pos" aria-label="POS Point of Sale">
+            <div class="product-panel-header">
+              <span class="section-tag">POS Point of Sale</span>
+              <h2 id="retail-pos">POS Point of Sale</h2>
+              <p>A retail POS solution for shops that need quick billing, barcode scanning, inventory updates, receipt printing, multi-payment support, and sales reporting. It helps owners reduce checkout time, avoid stock confusion, track product movement, and understand daily sales clearly.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project4.jpeg" alt="POS Point of Sale" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Fast Billing</h4>
+                <p>Quickly add products, calculate totals, apply tax, and complete checkout.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Barcode Scanning</h4>
+                <p>Use barcode support for accurate product search and billing.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Inventory Management</h4>
+                <p>Track stock, low-stock alerts, product movement, and item availability.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Payment Options</h4>
+                <p>Accept cash, UPI, card, wallet, and other payment modes.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Receipt Printing</h4>
+                <p>Generate clean receipts for customers with bill details.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Multi-Store Control</h4>
+                <p>Manage users, roles, products, and reporting across multiple stores.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Grocery Stores</span>
+                <span class="use-case-chip">Retail Shops</span>
+                <span class="use-case-chip">Supermarkets</span>
+                <span class="use-case-chip">Pharmacies</span>
+                <span class="use-case-chip">Counters</span>
+                <span class="use-case-chip">Small Businesses</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-sap" aria-label="Smart SAP Process Automation">
+            <div class="product-panel-header">
+              <span class="section-tag">Smart SAP Process Automation</span>
+              <h2 id="sap">Smart SAP Process Automation</h2>
+              <p>A Smart SAP automation layer for teams that repeatedly perform data entry, report generation, uploads, workflow approvals, and validations inside SAP. It helps finance, procurement, operations, and back-office teams reduce repetitive work, improve accuracy, and complete routine SAP processes faster.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project5.jpeg" alt="Smart SAP Process Automation" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>SAP Data Entry Automation</h4>
+                <p>Automate repetitive SAP entries and reduce manual typing effort.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Report Generation</h4>
+                <p>Generate standard and custom SAP reports on schedule.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Workflow Automation</h4>
+                <p>Automate approval steps, status updates, and business process flows.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Bulk Upload Processing</h4>
+                <p>Upload and validate large data files with exception handling.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Real-Time Monitoring</h4>
+                <p>Track successful, failed, and pending automation runs.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Compliance Logs</h4>
+                <p>Maintain execution logs and audit trails for review and control.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Finance Teams</span>
+                <span class="use-case-chip">SAP Users</span>
+                <span class="use-case-chip">Procurement</span>
+                <span class="use-case-chip">Operations</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Back Office Teams</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-invoice" aria-label="Intelligent Invoice Processing">
+            <div class="product-panel-header">
+              <span class="section-tag">Intelligent Invoice Processing</span>
+              <h2 id="invoice">Intelligent Invoice Processing</h2>
+              <p>An invoice automation system that captures invoices from email, upload, or scanned documents, extracts important fields using AI-OCR, validates them against PO, GRN, GST, and master data, and syncs clean records into ERP systems. It is built to reduce finance workload and speed up reconciliation.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project6.jpeg" alt="Intelligent Invoice Processing" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Invoice Capture</h4>
+                <p>Capture invoices from email, PDFs, images, scanned files, and portals.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>AI-OCR Extraction</h4>
+                <p>Extract invoice number, vendor, date, GSTIN, amount, tax, PO, and GRN details.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Automated Validation</h4>
+                <p>Validate invoice data against PO, GRN, GST, and vendor master data.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>ERP Integration</h4>
+                <p>Sync approved invoices to SAP, Oracle, Tally, Dynamics, and other systems.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Exception Handling</h4>
+                <p>Route mismatches, duplicates, and missing fields for review.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Finance Dashboard</h4>
+                <p>Track processed invoices, exceptions, processing time, and vendor status.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Accounts Payable</span>
+                <span class="use-case-chip">Finance Teams</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Retail & Distribution</span>
+                <span class="use-case-chip">ERP Users</span>
+                <span class="use-case-chip">Shared Services</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-sales-erp" aria-label="Sales to ERP Workflow Automation">
+            <div class="product-panel-header">
+              <span class="section-tag">Sales to ERP Workflow Automation</span>
+              <h2 id="sales-erp">Sales to ERP Workflow Automation</h2>
+              <p>A workflow automation system that captures sales orders from business applications, validates the order information, transforms it into the required ERP format, and pushes it to systems like SAP, Oracle, Tally, and Microsoft Dynamics. It removes duplicate data entry and gives complete visibility on order transfer status.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project7.jpeg" alt="Sales to ERP Workflow Automation" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Order Capture</h4>
+                <p>Automatically capture sales orders from sales portals, CRMs, or internal systems.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Data Validation</h4>
+                <p>Validate customer, item, amount, tax, and completeness before ERP posting.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>ERP Transfer</h4>
+                <p>Transfer clean order data to SAP, Oracle, Tally, Dynamics, and other ERP tools.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Status Tracking</h4>
+                <p>Track synced, failed, pending, and confirmed orders in real time.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Error Reduction</h4>
+                <p>Reduce costly mistakes caused by manual re-entry.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Workflow Visibility</h4>
+                <p>Give sales, finance, and operations one shared order status view.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Sales Teams</span>
+                <span class="use-case-chip">ERP Users</span>
+                <span class="use-case-chip">Distributors</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Order Processing Teams</span>
+                <span class="use-case-chip">Operations</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel active" id="panel-assets" aria-label="Asset Management System">
+            <div class="product-panel-header">
+              <span class="section-tag">Asset Management System</span>
+              <h2 id="assets">Asset Management System</h2>
+              <p>An asset management system for organizations that need to track physical and digital assets, maintenance schedules, depreciation, ownership, location, documents, and lifecycle history. It gives a central view of active assets, assets under maintenance, asset value, upcoming service work, and compliance records.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project8.jpeg" alt="Asset Management System" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Asset Tracking</h4>
+                <p>Track each asset with category, location, value, owner, and current status.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Maintenance Scheduling</h4>
+                <p>Plan preventive maintenance and track upcoming, overdue, and completed work.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Depreciation Management</h4>
+                <p>Maintain asset value and depreciation details for finance visibility.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>QR & Barcode Support</h4>
+                <p>Use QR or barcode tags for quick asset identification.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Asset History</h4>
+                <p>Maintain purchase, allocation, transfer, service, and document records.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Detailed Reports</h4>
+                <p>Generate reports for downtime, cost, utilization, and compliance.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">IT Companies</span>
+                <span class="use-case-chip">Hospitals</span>
+                <span class="use-case-chip">Schools & Colleges</span>
+                <span class="use-case-chip">Manufacturing</span>
+                <span class="use-case-chip">Government Bodies</span>
+                <span class="use-case-chip">Multi-Location Businesses</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-property" aria-label="Property Dealer Management System">
+            <div class="product-panel-header">
+              <span class="section-tag">Property Dealer Management System</span>
+              <h2 id="property">Property Dealer Management System</h2>
+              <p>A property dealer management system for brokers, builders, real estate consultants, and property teams. It manages property listings, customer leads, site visits, bookings, documents, payments, and follow-ups from one platform so teams can improve conversion and reduce manual coordination.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project9.jpeg" alt="Property Dealer Management System" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Property Listings</h4>
+                <p>Add and manage properties with images, prices, location, availability, and details.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Lead Tracking</h4>
+                <p>Track inquiries from new lead to site visit, proposal, booking, and closure.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Site Visit Scheduling</h4>
+                <p>Schedule visits with customers, agents, and property teams.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Booking Management</h4>
+                <p>Manage booking status, payment plans, documents, and customer communication.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Document Storage</h4>
+                <p>Store agreements, NOCs, customer files, and property papers securely.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Business Dashboard</h4>
+                <p>View leads, visits, bookings, revenue, and conversion performance.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Property Dealers</span>
+                <span class="use-case-chip">Brokers</span>
+                <span class="use-case-chip">Builders</span>
+                <span class="use-case-chip">Real Estate Teams</span>
+                <span class="use-case-chip">Channel Partners</span>
+                <span class="use-case-chip">Consultants</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+          <div class="product-panel" id="panel-ekyc" aria-label="E-KYC Government Portal Automation">
+            <div class="product-panel-header">
+              <span class="section-tag">E-KYC Government Portal Automation</span>
+              <h2 id="ekyc">E-KYC Government Portal Automation</h2>
+              <p>An E-KYC automation solution for businesses that need faster onboarding, identity verification, document validation, consent-based authentication, and compliance-ready audit trails. It can help teams verify customer data through official portals and complete KYC workflows with better speed and control.</p>
+            </div>
+            <div style="margin: 22px 0 26px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; background: var(--bg-card);">
+              <img src="../images/project10.jpeg" alt="E-KYC Government Portal Automation" style="width: 100%; display: block; object-fit: contain; background: #f5f8ff;">
+            </div>
+            <div class="product-panel-features">
+              <div class="product-feature-card">
+                <h4>Identity Verification</h4>
+                <p>Verify Aadhaar, PAN, voter ID, and other customer documents.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Government Portal Integration</h4>
+                <p>Connect with UIDAI, NSDL, CERSAI, DigiLocker, eSign, and related services.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Secure Authentication</h4>
+                <p>Use consent-based secure verification and controlled data access.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Automated Validation</h4>
+                <p>Validate customer details and reduce manual checking time.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Audit Logs</h4>
+                <p>Maintain verification status, logs, and compliance reports.</p>
+              </div>
+              <div class="product-feature-card">
+                <h4>Fraud Risk Reduction</h4>
+                <p>Use official-source checks to reduce fake or incorrect onboarding data.</p>
+              </div>
+            </div>
+            <div class="product-use-cases">
+              <h3>Best For</h3>
+              <div class="use-case-list">
+                <span class="use-case-chip">Financial Services</span>
+                <span class="use-case-chip">Insurance</span>
+                <span class="use-case-chip">NBFCs</span>
+                <span class="use-case-chip">Compliance Teams</span>
+                <span class="use-case-chip">Onboarding Teams</span>
+                <span class="use-case-chip">High-Volume Verification</span>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <a href="contact.html" class="btn btn-primary">Request a Demo -></a>
+            </div>
+          </div>
+
+        </div><!-- end panels -->
+      </div><!-- end tabs layout -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-section">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Want a Live Demo of Any Product?</h2>
+        <p>Schedule a free demo and see how our products can transform your specific workflows.</p>
+        <a href="contact.html" class="btn btn-white btn-lg">Book a Free Demo →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/logo.png" alt="BHAR India – Blue Horizon Automation Research" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-sub">Automation Research</span>
+          </div>
+        </a>
+        <p>Delivering intelligent automation and software solutions that drive measurable business outcomes.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link">in</a>
+          <a href="#" target="_blank" rel="noopener" class="social-link">f</a>
+          <a href="#" target="_blank" rel="noopener" class="social-link">𝕏</a>
+          <a href="https://youtu.be/hpFmBTWisYc?si=Z8lbj3WQz3ssQkwE" target="_blank" rel="noopener" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#rpa">Automation Solutions</a>
+        <a href="services.html#webapp">Web Applications</a>
+        <a href="services.html#consulting">Business Consultancy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="#crm">CRM &amp; Lead Management</a>
+        <a href="#clinic">Clinic Management</a>
+        <a href="#pos-captain">POS + Captain</a>
+        <a href="#retail-pos">POS System</a>
+        <a href="#sap">Smart SAP Automation</a>
+        <a href="#invoice">Invoice Processing</a>
+        <a href="#sales-erp">Sales to ERP</a>
+        <a href="#assets">Asset Management</a>
+        <a href="#property">Property Dealer System</a>
+        <a href="#ekyc">E-KYC Automation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2019 Blue Horizon Automation Research. All rights reserved.</p>
+      <p>Made with ❤️ in India</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script>
+  (function () {
+    const tabBtns  = document.querySelectorAll('.product-tab-btn');
+    const panels   = document.querySelectorAll('.product-panel');
+    const categoryBtns = document.querySelectorAll('.product-category-btn');
+    const categoryGroups = document.querySelectorAll('.product-tab-group');
+    const categoryTabs = {
+      applications: ['assets', 'property', 'crm', 'clinic', 'pos-captain', 'retail-pos'],
+      automation: ['sap-report', 'gst-calculation', 'sap', 'invoice', 'sales-erp', 'ekyc']
+    };
+
+    function showCategory(category) {
+      categoryBtns.forEach(btn => {
+        const isActive = btn.dataset.categoryTarget === category;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-selected', String(isActive));
+      });
+      categoryGroups.forEach(group => {
+        group.classList.toggle('active', group.dataset.productCategory === category);
+      });
+    }
+
+    function activateTab(tabId) {
+      const category = Object.keys(categoryTabs).find(key => categoryTabs[key].includes(tabId));
+      if (category) showCategory(category);
+      // Update buttons
+      tabBtns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabId);
+      });
+      // Update panels
+      panels.forEach(panel => {
+        panel.classList.toggle('active', panel.id === 'panel-' + tabId);
+      });
+    }
+
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.dataset.categoryTarget;
+        const firstTab = categoryTabs[category]?.[0];
+        if (!firstTab) return;
+        activateTab(firstTab);
+        history.replaceState(null, '', '#' + firstTab);
+      });
+    });
+
+    // Tab button clicks
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activateTab(btn.dataset.tab);
+        // Update URL hash without scrolling
+        history.replaceState(null, '', '#' + btn.dataset.tab);
+      });
+    });
+
+    // Handle dropdown / anchor link navigation (#crm, #clinic etc.)
+    function checkHash() {
+      const hash = window.location.hash.replace('#', '');
+      const validTabs = [...categoryTabs.applications, ...categoryTabs.automation];
+      if (hash && validTabs.includes(hash)) {
+        activateTab(hash);
+        // Scroll to the products section smoothly
+        const section = document.querySelector('.products-tabs-layout');
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // On page load — activate tab from hash if present
+    checkHash();
+
+    // On hash change (clicking dropdown links while already on page)
+    window.addEventListener('hashchange', checkHash);
+  })();
+</script>
+<script src="../js/theme.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/whatsapp-widget.js"></script>
+</body>
+</html>

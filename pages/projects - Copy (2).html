@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Product Implementations & Automation Case Studies | BHAR India</title>
+  <meta name="description" content="Explore BHAR India's project portfolio across CRM, clinic management, POS, SAP automation, invoice processing, ERP workflows, assets, property management, and E-KYC automation." />
+  <meta name="keywords" content="CRM project India, clinic management project, POS software project, SAP automation case study, invoice processing automation, asset management implementation, property dealer software, E-KYC automation, BHAR India projects" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bharindia.com/pages/projects.html" />
+  <meta property="og:title" content="Projects – BHAR India Case Studies" />
+  <meta property="og:description" content="Product implementation case studies for business software, automation workflows, dashboards, and secure digital operations." />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+        <img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">Blue Horizon</span>
+          <span class="brand-sub">Automation Research</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="services.html#rpa"><span class="icon">&#x1F916;</span> Automation Solutions</a>
+            <a href="services.html#webapp"><span class="icon">&#x1F310;</span> Web Applications</a>
+            <a href="services.html#consulting"><span class="icon">&#x1F4C8;</span> Business Consultancy</a>
+          </div></div>
+        </li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#x1F319;</button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <div class="mobile-section-label">Services</div>
+    <a href="services.html#rpa">&#x1F916; Automation Solutions</a>
+    <a href="services.html#webapp">&#x1F310; Web Applications</a>
+    <a href="services.html#consulting">&#x1F4C8; Business Consultancy</a>
+    <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Products</div>
+    <a href="products.html#crm">&#x1F4BC; CRM &amp; Lead Management</a>
+    <a href="products.html#clinic">&#x1F3E5; Clinic Management</a>
+    <a href="products.html#pos-captain">&#x1F9FE; POS + Captain</a>
+    <a href="products.html#retail-pos">&#x1F6D2; POS System</a>
+    <a href="products.html#sap">&#x2699;&#xFE0F; Smart SAP Automation</a>
+    <a href="products.html#invoice">&#x1F4C4; Invoice Processing</a>
+    <a href="products.html#sales-erp">&#x1F501; Sales to ERP</a>
+    <a href="products.html#assets">&#x1F4E6; Asset Management</a>
+    <a href="products.html#property">&#x1F3E2; Property Dealer System</a>
+    <a href="products.html#ekyc">&#x1F6E1;&#xFE0F; E-KYC Automation</a>
+    <div class="mobile-divider"></div>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn-primary-mobile">Contact Us</a>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a><span>›</span><span>Projects</span>
+      </div>
+      <h1>Our Projects</h1>
+      <p>Explore product-style implementations based on our CRM, clinic, POS, SAP, invoice, ERP, asset, property, and E-KYC solutions. Click any project to view details.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Projects">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div class="filter-row" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:40px;">
+        <button class="filter-tag active" data-filter="all" onclick="filterProjects(this,'all')">All Projects</button>
+        <button class="filter-tag" data-filter="business" onclick="filterProjects(this,'business')">Business Apps</button>
+        <button class="filter-tag" data-filter="operations" onclick="filterProjects(this,'operations')">POS &amp; Operations</button>
+        <button class="filter-tag" data-filter="automation" onclick="filterProjects(this,'automation')">Automation</button>
+        <button class="filter-tag" data-filter="compliance" onclick="filterProjects(this,'compliance')">Compliance</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal delay-1" data-category="business" data-project="1">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project1.jpeg" alt="CRM & Lead Management System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">CRM</span>
+              <span class="project-tag">Sales</span>
+              <span class="project-tag">Dashboard</span>
+            </div>
+            <h3>CRM & Lead Management System</h3>
+            <p>A complete CRM implementation for capturing leads, managing follow-ups, tracking pipelines, and improving conversion visibility.</p>
+            <div class="project-card-footer">
+              <span>8-10 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-category="business" data-project="2">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project2.jpeg" alt="Clinic Management System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">Clinic</span>
+              <span class="project-tag">Healthcare</span>
+              <span class="project-tag">Appointments</span>
+            </div>
+            <h3>Clinic Management System</h3>
+            <p>A healthcare operations platform for patient registration, appointments, EMR, prescriptions, billing, and clinic reporting.</p>
+            <div class="project-card-footer">
+              <span>10-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-3" data-category="operations" data-project="3">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project3.jpeg" alt="POS + Captain System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">POS</span>
+              <span class="project-tag">Captain</span>
+              <span class="project-tag">Restaurant</span>
+            </div>
+            <h3>POS + Captain System</h3>
+            <p>An advanced billing and captain panel setup for restaurants, cafes, counters, and order-taking teams.</p>
+            <div class="project-card-footer">
+              <span>8-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="operations" data-project="4">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project4.jpeg" alt="Retail POS System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">POS</span>
+              <span class="project-tag">Retail</span>
+              <span class="project-tag">Inventory</span>
+            </div>
+            <h3>Retail POS System</h3>
+            <p>A retail point-of-sale implementation for billing, barcode scanning, inventory, receipt printing, and sales reports.</p>
+            <div class="project-card-footer">
+              <span>6-10 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-category="automation" data-project="5">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project5.jpeg" alt="Smart SAP Process Automation" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">SAP</span>
+              <span class="project-tag">Automation</span>
+              <span class="project-tag">Back Office</span>
+            </div>
+            <h3>Smart SAP Process Automation</h3>
+            <p>A process automation implementation for SAP data entry, reports, uploads, approvals, monitoring, and logs.</p>
+            <div class="project-card-footer">
+              <span>10-14 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-3" data-category="automation" data-project="6">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project6.jpeg" alt="Intelligent Invoice Processing" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">Invoice</span>
+              <span class="project-tag">AI-OCR</span>
+              <span class="project-tag">ERP</span>
+            </div>
+            <h3>Intelligent Invoice Processing</h3>
+            <p>An AI-OCR invoice automation workflow for capture, extraction, validation, exception handling, and ERP sync.</p>
+            <div class="project-card-footer">
+              <span>8-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="automation" data-project="7">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project7.jpeg" alt="Sales to ERP Workflow Automation" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">Sales</span>
+              <span class="project-tag">ERP</span>
+              <span class="project-tag">Workflow</span>
+            </div>
+            <h3>Sales to ERP Workflow Automation</h3>
+            <p>A sales order sync workflow that validates order data and transfers clean records into ERP systems.</p>
+            <div class="project-card-footer">
+              <span>8-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-category="business" data-project="8">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project8.jpeg" alt="Asset Management System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">Assets</span>
+              <span class="project-tag">QR</span>
+              <span class="project-tag">Maintenance</span>
+            </div>
+            <h3>Asset Management System</h3>
+            <p>A complete asset lifecycle platform for tracking, maintenance, depreciation, QR/barcode identification, and reports.</p>
+            <div class="project-card-footer">
+              <span>8-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-3" data-category="business" data-project="9">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project9.jpeg" alt="Property Dealer Management System" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">Property</span>
+              <span class="project-tag">Leads</span>
+              <span class="project-tag">Bookings</span>
+            </div>
+            <h3>Property Dealer Management System</h3>
+            <p>A real estate operations platform for property listings, leads, site visits, bookings, documents, and payments.</p>
+            <div class="project-card-footer">
+              <span>8-12 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="compliance" data-project="10">
+          <div class="project-thumb" aria-hidden="true" style="padding:0; overflow:hidden; background:#f5f8ff;">
+            <img src="../images/project10.jpeg" alt="E-KYC Government Portal Automation" style="width:100%; height:100%; object-fit:contain; background:#f5f8ff; display:block;">
+          </div>
+          <div class="project-card-body">
+            <div class="project-tags">
+              <span class="project-tag">E-KYC</span>
+              <span class="project-tag">Verification</span>
+              <span class="project-tag">Compliance</span>
+            </div>
+            <h3>E-KYC Government Portal Automation</h3>
+            <p>A secure digital verification workflow for onboarding, consent, document validation, government portal checks, and audit logs.</p>
+            <div class="project-card-footer">
+              <span>10-14 weeks</span>
+              <span class="view-project-btn">View Case Study -></span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-section">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Have a Project in Mind?</h2>
+        <p>Tell us about your automation challenge and we'll design a solution around your goals.</p>
+        <a href="contact.html" class="btn btn-white btn-lg">Discuss Your Project →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+    <div class="modal-header">
+      <h2 id="modal-title">Project Title</h2>
+      <div class="modal-meta">
+        <span class="badge" id="modal-duration"></span>
+        <span class="badge" id="modal-status"></span>
+      </div>
+      <div class="modal-meta" style="margin-top:10px;" id="modal-tags"></div>
+    </div>
+    <div class="modal-body">
+      <div id="modal-image-wrap" style="margin-bottom:22px; border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; background:var(--bg-card);"></div>
+
+      <h3>Overview</h3>
+      <p id="modal-desc"></p>
+
+      <h3>Key Features Implemented</h3>
+      <ul id="modal-features" style="margin-top:10px; display:flex; flex-direction:column; gap:8px; color:var(--text-sec); font-size:14.5px; padding-left:0; list-style:none;">
+      </ul>
+
+      <h3>Outcome</h3>
+      <p id="modal-outcome" style="color:var(--text-sec);"></p>
+
+      <h3>Technologies Used</h3>
+      <div class="tech-stack" id="modal-tech"></div>
+
+      <div style="margin-top:28px; padding-top:20px; border-top:1px solid var(--border);">
+        <a href="contact.html" class="btn btn-primary">Start a Similar Project →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../images/logo.png" alt="BHAR India – Blue Horizon Automation Research" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-sub">Automation Research</span>
+          </div>
+        </a>
+        <p>Delivering intelligent automation and software solutions that drive measurable business outcomes.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link">in</a>
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">𝕏</a>
+          <a href="https://youtu.be/hpFmBTWisYc?si=Z8lbj3WQz3ssQkwE" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#rpa">Automation Solutions</a>
+        <a href="services.html#webapp">Web Applications</a>
+        <a href="services.html#consulting">Business Consultancy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="products.html#crm">CRM &amp; Lead Management</a>
+        <a href="products.html#clinic">Clinic Management</a>
+        <a href="products.html#pos-captain">POS + Captain</a>
+        <a href="products.html#retail-pos">POS System</a>
+        <a href="products.html#sap">Smart SAP Automation</a>
+        <a href="products.html#invoice">Invoice Processing</a>
+        <a href="products.html#sales-erp">Sales to ERP</a>
+        <a href="products.html#assets">Asset Management</a>
+        <a href="products.html#property">Property Dealer System</a>
+        <a href="products.html#ekyc">E-KYC Automation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2019 Blue Horizon Automation Research. All rights reserved.</p>
+      <p>Made with ❤️ in India</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="../js/theme.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  const projectDetails = {
+    "1": {
+        "title": "CRM & Lead Management System",
+        "duration": "8-10 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project delivers a complete CRM and lead management platform for teams that want every inquiry, customer interaction, follow-up, task, and deal stage managed from one dashboard. It replaces scattered spreadsheets and manual reminders with a structured lead-to-conversion workflow, helping managers monitor performance while sales users stay focused on the next action.",
+        "features": [
+            "Lead capture from web forms, calls, WhatsApp, campaigns, and manual entries",
+            "Pipeline stages for new, contacted, qualified, proposal, won, and lost leads",
+            "Task reminders, follow-up scheduling, and activity history for every lead",
+            "Role-based dashboards for executives, managers, and administrators",
+            "Revenue, conversion, open deal, and team productivity reports",
+            "Mobile-friendly access for field sales and management teams"
+        ],
+        "outcome": "A cleaner sales process with faster follow-ups, better customer visibility, stronger accountability, and improved conversion tracking across the full pipeline.",
+        "tech": [
+            "Flutter/Web App",
+            "Firebase/Cloud DB",
+            "CRM Workflow",
+            "Analytics Dashboard",
+            "Role Access"
+        ],
+        "tags": [
+            "CRM",
+            "Sales",
+            "Dashboard"
+        ],
+        "img": "../images/project1.jpeg"
+    },
+    "2": {
+        "title": "Clinic Management System",
+        "duration": "10-12 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project digitizes the daily workflow of clinics, doctors, physiotherapy centers, diagnostic centers, and small hospitals. It gives the front desk, doctors, and administrators one connected system for patient profiles, appointments, visit history, prescriptions, billing, payments, and reports so patient care becomes faster and more organized.",
+        "features": [
+            "Patient registration with complete profile and visit history",
+            "Doctor-wise appointment booking, rescheduling, and reminders",
+            "Electronic medical records for diagnosis, treatment notes, and prescriptions",
+            "Billing, invoicing, payment tracking, and pending dues management",
+            "Clinic dashboards for patients, appointments, revenue, and pending work",
+            "Secure cloud access for doctors, staff, and clinic administrators"
+        ],
+        "outcome": "Reduced front-desk workload, faster patient handling, better record keeping, and clearer visibility into appointments, revenue, and clinic performance.",
+        "tech": [
+            "Healthcare CRM",
+            "Appointment System",
+            "Cloud Database",
+            "Billing Module",
+            "Reports"
+        ],
+        "tags": [
+            "Clinic",
+            "Healthcare",
+            "Appointments"
+        ],
+        "img": "../images/project2.jpeg"
+    },
+    "3": {
+        "title": "POS + Captain System",
+        "duration": "8-12 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project combines fast billing with a Captain panel for live order control. It is designed for restaurants, cafes, food counters, and service businesses that need order taking, cashier billing, staff roles, payment tracking, customer analytics, and business reports in one connected flow.",
+        "features": [
+            "Fast billing with discounts, taxes, item quantity, and multiple payment modes",
+            "Captain panel for order taking through mobile, tablet, or floor staff devices",
+            "Staff and role management for cashier, captain, manager, and owner access",
+            "Live order tracking for pending, preparing, served, and completed orders",
+            "Sales dashboard with revenue, order count, average order value, and category reports",
+            "Receipt printing and daily sales reports for business review"
+        ],
+        "outcome": "Faster service, stronger billing control, better staff accountability, and real-time visibility into restaurant or counter operations.",
+        "tech": [
+            "POS App",
+            "Captain Panel",
+            "Receipt Printing",
+            "UPI/Cash/Card",
+            "Sales Reports"
+        ],
+        "tags": [
+            "POS",
+            "Captain",
+            "Restaurant"
+        ],
+        "img": "../images/project3.jpeg"
+    },
+    "4": {
+        "title": "Retail POS System",
+        "duration": "6-10 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project is built for retail shops, grocery stores, supermarkets, pharmacies, and counters that need quick billing and reliable inventory control. It manages product sales, stock movement, payment modes, receipts, low-stock alerts, customer transactions, and daily reports from a simple dashboard.",
+        "features": [
+            "Fast checkout with product search, quantity, discount, tax, and payment handling",
+            "Barcode scanning support for accurate and quick item billing",
+            "Inventory updates with product stock, low-stock alerts, and item availability",
+            "Cash, UPI, card, wallet, and split payment support",
+            "Receipt printing and sale history for daily reconciliation",
+            "Multi-user and multi-store control for growing businesses"
+        ],
+        "outcome": "Shorter billing time, fewer manual mistakes, clearer stock visibility, and better control over daily sales and cash flow.",
+        "tech": [
+            "Retail POS",
+            "Inventory System",
+            "Barcode",
+            "Payment Modes",
+            "Reports"
+        ],
+        "tags": [
+            "POS",
+            "Retail",
+            "Inventory"
+        ],
+        "img": "../images/project4.jpeg"
+    },
+    "5": {
+        "title": "Smart SAP Process Automation",
+        "duration": "10-14 weeks",
+        "status": "Automation Ready",
+        "desc": "This project automates repetitive SAP work for finance, procurement, operations, and back-office teams. The workflow can capture triggers, perform SAP entries, run reports, upload validated data, update statuses, monitor exceptions, and maintain logs so routine SAP tasks become faster and more reliable.",
+        "features": [
+            "SAP data entry automation for repetitive transaction work",
+            "Scheduled report generation and delivery for standard and custom reports",
+            "Workflow automation for approvals, status updates, and validation steps",
+            "Bulk data upload with validation, exception handling, and error reporting",
+            "Real-time monitoring of successful, failed, pending, and in-progress runs",
+            "Audit logs and compliance records for process review"
+        ],
+        "outcome": "Higher productivity, fewer manual SAP errors, faster turnaround time, lower operating cost, and better process compliance.",
+        "tech": [
+            "SAP Automation",
+            "RPA Bots",
+            "Workflow Engine",
+            "Validation Rules",
+            "Monitoring Logs"
+        ],
+        "tags": [
+            "SAP",
+            "Automation",
+            "Back Office"
+        ],
+        "img": "../images/project5.jpeg"
+    },
+    "6": {
+        "title": "Intelligent Invoice Processing",
+        "duration": "8-12 weeks",
+        "status": "Automation Ready",
+        "desc": "This project automates purchase invoice processing from email, upload, scanned files, or vendor portals. It extracts invoice number, vendor, GSTIN, date, amount, tax, PO, and GRN details, validates them against business rules, handles exceptions, and syncs approved invoices into ERP systems.",
+        "features": [
+            "Invoice capture from email, upload, PDF, image, scanned files, and portals",
+            "AI-OCR extraction for invoice fields, tax details, vendor data, and amounts",
+            "Validation against PO, GRN, GST, duplicate checks, and master data",
+            "ERP sync support for SAP, Oracle, Tally, Dynamics, and similar systems",
+            "Exception queue for missing fields, mismatch cases, and review approvals",
+            "Dashboards for processed invoices, pending validation, exceptions, and processing time"
+        ],
+        "outcome": "Reduced accounts payable workload, faster reconciliation, improved data accuracy, better compliance, and stronger visibility into invoice status.",
+        "tech": [
+            "AI-OCR",
+            "Invoice Automation",
+            "ERP Integration",
+            "GST Validation",
+            "Exception Handling"
+        ],
+        "tags": [
+            "Invoice",
+            "AI-OCR",
+            "ERP"
+        ],
+        "img": "../images/project6.jpeg"
+    },
+    "7": {
+        "title": "Sales to ERP Workflow Automation",
+        "duration": "8-12 weeks",
+        "status": "Automation Ready",
+        "desc": "This project connects sales systems with ERP platforms by capturing sales orders, validating customer and item information, transforming data into ERP format, and posting it into systems such as SAP, Oracle, Tally, or Microsoft Dynamics. It removes duplicate manual entry and gives teams a live view of order transfer status.",
+        "features": [
+            "Automatic sales order capture from CRM, portal, or internal sales systems",
+            "Validation for customer, item, amount, tax, quantity, and completeness",
+            "Data transformation into ERP-ready format before posting",
+            "Real-time transfer status for synced, failed, pending, and confirmed orders",
+            "Error reporting and retry flow for failed ERP transfers",
+            "Shared visibility for sales, finance, operations, and management teams"
+        ],
+        "outcome": "Faster order processing, fewer data-entry errors, better sales-to-finance coordination, and real-time visibility into ERP sync performance.",
+        "tech": [
+            "ERP Integration",
+            "Workflow Automation",
+            "Data Validation",
+            "API/RPA Posting",
+            "Order Tracking"
+        ],
+        "tags": [
+            "Sales",
+            "ERP",
+            "Workflow"
+        ],
+        "img": "../images/project7.jpeg"
+    },
+    "8": {
+        "title": "Asset Management System",
+        "duration": "8-12 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project helps organizations track physical and digital assets across departments, locations, users, and lifecycle stages. It manages asset registration, QR/barcode identification, allocation, maintenance schedules, depreciation, documents, transfers, audits, and reporting from one platform.",
+        "features": [
+            "Asset registration with category, location, value, owner, and current status",
+            "QR and barcode tagging for quick asset identification",
+            "Maintenance planning with upcoming, overdue, and completed schedules",
+            "Depreciation tracking for finance and audit visibility",
+            "Asset history covering purchase, allocation, transfer, repair, and disposal",
+            "Reports for utilization, downtime, maintenance cost, and compliance"
+        ],
+        "outcome": "Better asset visibility, reduced downtime, cleaner audits, improved utilization, and stronger control over asset value and maintenance planning.",
+        "tech": [
+            "Asset Tracking",
+            "QR/Barcode",
+            "Maintenance Module",
+            "Depreciation",
+            "Audit Reports"
+        ],
+        "tags": [
+            "Assets",
+            "QR",
+            "Maintenance"
+        ],
+        "img": "../images/project8.jpeg"
+    },
+    "9": {
+        "title": "Property Dealer Management System",
+        "duration": "8-12 weeks",
+        "status": "Ready to Deploy",
+        "desc": "This project is made for property dealers, brokers, builders, real estate consultants, and channel partners. It manages property listings, customer inquiries, lead follow-ups, site visit scheduling, booking status, payment plans, documents, and conversion reports in one centralized platform.",
+        "features": [
+            "Property listing management with images, pricing, location, and availability",
+            "Lead tracking from inquiry to site visit, proposal, booking, and closure",
+            "Site visit scheduling with customer, agent, and property team coordination",
+            "Booking and payment status management with follow-up reminders",
+            "Secure document storage for agreements, NOCs, customer files, and property papers",
+            "Dashboard for leads, visits, bookings, revenue, and conversion performance"
+        ],
+        "outcome": "More organized property operations, improved lead conversion, faster follow-ups, better document control, and clearer visibility into real estate sales activity.",
+        "tech": [
+            "Real Estate CRM",
+            "Property Listings",
+            "Lead Tracking",
+            "Visit Scheduling",
+            "Document Storage"
+        ],
+        "tags": [
+            "Property",
+            "Leads",
+            "Bookings"
+        ],
+        "img": "../images/project9.jpeg"
+    },
+    "10": {
+        "title": "E-KYC Government Portal Automation",
+        "duration": "10-14 weeks",
+        "status": "Automation Ready",
+        "desc": "This project supports organizations that need faster customer onboarding, identity verification, document validation, consent-based authentication, and compliance-ready audit trails. It can help teams validate Aadhaar, PAN, voter ID, DigiLocker, eSign, and related government-source information with structured workflow control.",
+        "features": [
+            "Customer detail and document capture for onboarding workflows",
+            "Identity verification using Aadhaar, PAN, voter ID, and other official records",
+            "Integration flow for UIDAI, NSDL, CERSAI, DigiLocker, eSign, and related services",
+            "Consent-based authentication and controlled verification access",
+            "Audit logs, status tracking, and compliance reporting",
+            "Fraud risk reduction through official-source verification and structured validation"
+        ],
+        "outcome": "Faster onboarding, reduced manual verification effort, better compliance readiness, stronger audit trails, and lower fraud risk.",
+        "tech": [
+            "E-KYC Workflow",
+            "Government Portal Integration",
+            "Secure Verification",
+            "Audit Logs",
+            "Compliance Reports"
+        ],
+        "tags": [
+            "E-KYC",
+            "Verification",
+            "Compliance"
+        ],
+        "img": "../images/project10.jpeg"
+    }
+};
+
+  function filterProjects(btn, cat) {
+    document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('projectModal');
+    const closeBtn = document.getElementById('modalClose');
+    const titleEl = document.getElementById('modal-title');
+    const durationEl = document.getElementById('modal-duration');
+    const statusEl = document.getElementById('modal-status');
+    const tagsEl = document.getElementById('modal-tags');
+    const descEl = document.getElementById('modal-desc');
+    const featuresEl = document.getElementById('modal-features');
+    const outcomeEl = document.getElementById('modal-outcome');
+    const techEl = document.getElementById('modal-tech');
+    const imageWrap = document.getElementById('modal-image-wrap');
+
+    function openProject(id) {
+      const project = projectDetails[id];
+      if (!project || !modal) return;
+      titleEl.textContent = project.title;
+      durationEl.textContent = project.duration;
+      statusEl.textContent = project.status;
+      tagsEl.innerHTML = project.tags.map(tag => `<span class="badge">${tag}</span>`).join('');
+      descEl.textContent = project.desc;
+      featuresEl.innerHTML = project.features.map(item => `<li><span>✓</span><span>${item}</span></li>`).join('');
+      outcomeEl.textContent = project.outcome;
+      techEl.innerHTML = project.tech.map(item => `<span class="tech-badge">${item}</span>`).join('');
+      imageWrap.innerHTML = `<img src="${project.img}" alt="${project.title}" style="width:100%; display:block; object-fit:contain; background:#f5f8ff;">`;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProject() {
+      if (!modal) return;
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', event => {
+      const card = event.target.closest('.project-card');
+      if (!card) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      openProject(card.dataset.project);
+    }, true);
+    closeBtn?.addEventListener('click', closeProject);
+    modal?.addEventListener('click', event => {
+      if (event.target === modal) closeProject();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && modal?.classList.contains('open')) closeProject();
+    });
+
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('#modal-features li').forEach(li => {
+        li.style.display = 'flex';
+        li.style.alignItems = 'flex-start';
+        li.style.gap = '10px';
+        li.style.padding = '6px 0';
+        li.style.borderBottom = '1px solid var(--border)';
+      });
+    });
+    if (featuresEl) observer.observe(featuresEl, { childList: true });
+  });
+</script>
+<script src="../js/whatsapp-widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - AI, RPA, Flutter & Business Automation Insights | BHAR India</title>
+  <meta name="description" content="Explore practical articles on AI agents, RPA, Flutter, app development frameworks, ERP automation, invoice automation, UI automation, and custom business software." />
+  <meta name="keywords" content="AI agents, RPA, Flutter scope, app development frameworks, ERP automation, invoice automation, UI automation, business automation, custom software" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.bharindia.com/pages/blog.html" />
+  <meta property="og:title" content="Blog - BHAR India | AI, RPA & Technology Insights" />
+  <meta property="og:description" content="Practical insights on AI, RPA, Flutter, business automation and software development." />
+  <meta property="og:url" content="https://www.bharindia.com/pages/blog.html" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+<header>
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+        <img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="brand-name">Blue Horizon</span>
+          <span class="brand-sub">Automation Research</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="services.html#rpa"><span class="icon">&#x1F916;</span> Automation Solutions</a>
+            <a href="services.html#webapp"><span class="icon">&#x1F310;</span> Web Applications</a>
+            <a href="services.html#consulting"><span class="icon">&#x1F4C8;</span> Website Development</a>
+          </div></div>
+        </li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#x1F319;</button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-desktop">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <div class="mobile-section-label">Services</div>
+    <a href="services.html#rpa">&#x1F916; Automation Solutions</a>
+    <a href="services.html#webapp">&#x1F310; Web Applications</a>
+    <a href="services.html#consulting">&#x1F4C8; Business Consultancy</a>
+    <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Products</div>
+    <a href="products.html#crm">&#x1F4BC; CRM &amp; Lead Management</a>
+    <a href="products.html#clinic">&#x1F3E5; Clinic Management</a>
+    <a href="products.html#pos-captain">&#x1F9FE; POS + Captain</a>
+    <a href="products.html#retail-pos">&#x1F6D2; POS System</a>
+    <a href="products.html#sap">&#x2699;&#xFE0F; Smart SAP Automation</a>
+    <a href="products.html#invoice">&#x1F4C4; Invoice Processing</a>
+    <a href="products.html#sales-erp">&#x1F501; Sales to ERP</a>
+    <a href="products.html#assets">&#x1F4E6; Asset Management</a>
+    <a href="products.html#property">&#x1F3E2; Property Dealer System</a>
+    <a href="products.html#ekyc">&#x1F6E1;&#xFE0F; E-KYC Automation</a>
+    <div class="mobile-divider"></div>
+    <a href="pricing.html">Pricing</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn-primary-mobile">Contact Us</a>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a><span>›</span><span>Blog</span></div>
+      <h1>AI, RPA & Technology Blog</h1>
+      <p>Practical insights on AI agents, Flutter, app frameworks, RPA, ERP automation, invoice automation, UI automation and business software planning.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Blog Posts">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="blog-filter-row">
+        <div class="blog-search" role="search">
+          <span aria-hidden="true">🔍</span>
+          <input type="search" id="blogSearch" placeholder="Search articles..." aria-label="Search blog articles" />
+        </div>
+        <div class="filter-tags" role="group" aria-label="Filter by category">
+          <button class="filter-tag active" data-filter="all">All</button>
+          <button class="filter-tag" data-filter="ai">AI</button>
+          <button class="filter-tag" data-filter="rpa">RPA</button>
+          <button class="filter-tag" data-filter="flutter">Flutter</button>
+          <button class="filter-tag" data-filter="webdev">Web/App Dev</button>
+          <button class="filter-tag" data-filter="automation">Business Automation</button>
+          <button class="filter-tag" data-filter="guide">Guides</button>
+        </div>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card reveal delay-1" data-category="flutter">
+          <div class="blog-thumb" aria-hidden="true">📱</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Flutter</span>
+              <span>Jun 16, 2026</span>
+              <span>7 min read</span>
+            </div>
+            <h3>The Future Scope of Flutter for Apps, Web, Desktop and Business Software</h3>
+            <p>Flutter is no longer limited to mobile apps. It is becoming a practical choice for business apps, internal tools, dashboards, and cross-platform products.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-flutter-scope-india.html" data-page="blog-flutter-scope-india.html" class="read-more" aria-label="Read The Future Scope of Flutter for Apps, Web, Desktop and Business Software">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-2" data-category="webdev">
+          <div class="blog-thumb" aria-hidden="true">🧩</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Web/App Dev</span>
+              <span>Jun 15, 2026</span>
+              <span>8 min read</span>
+            </div>
+            <h3>Popular App Development Frameworks: Flutter, React Native, Native and Web Apps</h3>
+            <p>A business-friendly guide to choosing the right technology stack based on cost, speed, performance, hiring, scalability, and long-term maintenance.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-app-development-frameworks.html" data-page="blog-app-development-frameworks.html" class="read-more" aria-label="Read Popular App Development Frameworks: Flutter, React Native, Native and Web Apps">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-3" data-category="ai">
+          <div class="blog-thumb" aria-hidden="true">🧠</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">AI</span>
+              <span>Jun 14, 2026</span>
+              <span>9 min read</span>
+            </div>
+            <h3>The Scope of AI Agents in Modern Business Applications</h3>
+            <p>AI agents are moving beyond chatbots. They can read data, use tools, prepare reports, assist teams, and help automate business workflows.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-ai-agents-business-apps.html" data-page="blog-ai-agents-business-apps.html" class="read-more" aria-label="Read The Scope of AI Agents in Modern Business Applications">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-1" data-category="ai">
+          <div class="blog-thumb" aria-hidden="true">📈</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">AI</span>
+              <span>Jun 13, 2026</span>
+              <span>7 min read</span>
+            </div>
+            <h3>Why Businesses Are Shifting Towards AI Automation</h3>
+            <p>Companies are adopting AI automation to reduce repetitive work, improve response time, generate insights, and make better operational decisions.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-businesses-shifting-to-ai.html" data-page="blog-businesses-shifting-to-ai.html" class="read-more" aria-label="Read Why Businesses Are Shifting Towards AI Automation">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-2" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">⚙️</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Jun 12, 2026</span>
+              <span>8 min read</span>
+            </div>
+            <h3>How RPA Works in ERP Systems like SAP, Tally, Oracle and Dynamics</h3>
+            <p>RPA can automate ERP data entry, report downloads, validations, uploads, reconciliations, and repetitive back-office workflows.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-rpa-erp-automation.html" data-page="blog-rpa-erp-automation.html" class="read-more" aria-label="Read How RPA Works in ERP Systems like SAP, Tally, Oracle and Dynamics">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-3" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">📄</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Jun 11, 2026</span>
+              <span>9 min read</span>
+            </div>
+            <h3>Invoice Automation with AI-OCR and RPA: A Practical Finance Workflow</h3>
+            <p>AI-OCR extracts invoice data, rule engines validate it, and RPA or APIs help post clean records into ERP or accounting systems.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-invoice-automation-ai-ocr.html" data-page="blog-invoice-automation-ai-ocr.html" class="read-more" aria-label="Read Invoice Automation with AI-OCR and RPA: A Practical Finance Workflow">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-1" data-category="rpa">
+          <div class="blog-thumb" aria-hidden="true">🖥️</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">RPA</span>
+              <span>Jun 10, 2026</span>
+              <span>7 min read</span>
+            </div>
+            <h3>What Is UI Automation and Where Does It Help Businesses?</h3>
+            <p>UI automation turns repetitive clicks, typing, searches, downloads, uploads, and copy-paste work into repeatable automated workflows.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-ui-automation-rpa.html" data-page="blog-ui-automation-rpa.html" class="read-more" aria-label="Read What Is UI Automation and Where Does It Help Businesses?">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-2" data-category="guide">
+          <div class="blog-thumb" aria-hidden="true">⚖️</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Guide</span>
+              <span>Jun 9, 2026</span>
+              <span>8 min read</span>
+            </div>
+            <h3>Custom Software vs Ready-Made SaaS: What Should a Business Choose?</h3>
+            <p>Ready-made SaaS is quick to start, but custom software gives better workflow fit, ownership, integration flexibility, and long-term control.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-custom-software-vs-saas.html" data-page="blog-custom-software-vs-saas.html" class="read-more" aria-label="Read Custom Software vs Ready-Made SaaS: What Should a Business Choose?">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-3" data-category="automation">
+          <div class="blog-thumb" aria-hidden="true">🏗️</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">Business Automation</span>
+              <span>Jun 8, 2026</span>
+              <span>9 min read</span>
+            </div>
+            <h3>How CRM, POS, Clinic and Asset Management Software Should Be Planned</h3>
+            <p>A practical look at modules, roles, databases, reports, workflows, and MVP planning before building business software.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-crm-pos-clinic-software.html" data-page="blog-crm-pos-clinic-software.html" class="read-more" aria-label="Read How CRM, POS, Clinic and Asset Management Software Should Be Planned">Read More -&gt;</a>
+          </div>
+        </article>
+        <article class="blog-card reveal delay-1" data-category="ai">
+          <div class="blog-thumb" aria-hidden="true">🚀</div>
+          <div class="blog-body">
+            <div class="blog-meta">
+              <span class="blog-category">AI</span>
+              <span>Jun 7, 2026</span>
+              <span>7 min read</span>
+            </div>
+            <h3>The Future of AI + RPA: Smarter Automation and Autonomous Workflows</h3>
+            <p>RPA follows rules while AI understands context. Together they can power smarter document workflows, ERP updates, reports, and decisions.</p>
+          </div>
+          <div class="blog-footer">
+            <span>By BHAR Team</span>
+            <a href="blog-ai-rpa-future.html" data-page="blog-ai-rpa-future.html" class="read-more" aria-label="Read The Future of AI + RPA: Smarter Automation and Autonomous Workflows">Read More -&gt;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-section" aria-label="Newsletter">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Stay Ahead with AI & Automation Insights</h2>
+        <p>Follow practical articles on AI agents, RPA, Flutter, ERP automation and modern business applications.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+          <img src="../images/logo.png" alt="BHAR India - Blue Horizon Automation Research" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Blue Horizon</span>
+            <span class="brand-sub">Automation Research</span>
+          </div>
+        </a>
+        <p>Delivering intelligent automation and software solutions that drive measurable business outcomes. Built for India, designed for scale.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#rpa">Automation Solutions</a>
+        <a href="services.html#webapp">Web Applications</a>
+        <a href="services.html#consulting">Business Consultancy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+              <a href="products.html#crm">CRM &amp; Lead Management</a>
+              <a href="products.html#clinic">Clinic Management</a>
+              <a href="products.html#pos-captain">POS + Captain</a>
+              <a href="products.html#retail-pos">POS System</a>
+              <a href="products.html#sap">Smart SAP Automation</a>
+              <a href="products.html#invoice">Invoice Processing</a>
+              <a href="products.html#sales-erp">Sales to ERP</a>
+              <a href="products.html#assets">Asset Management</a>
+              <a href="products.html#property">Property Dealer System</a>
+              <a href="products.html#ekyc">E-KYC Automation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2019 Blue Horizon Automation Research. All rights reserved.</p>
+      <p>Made with ❤️ in India</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/theme.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.filter-tag');
+    const cards = document.querySelectorAll('.blog-card');
+    const search = document.getElementById('blogSearch');
+    let activeFilter = 'all';
+
+    function applyFilter() {
+      const query = (search?.value || '').toLowerCase().trim();
+      cards.forEach(card => {
+        const categoryMatch = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const searchMatch = !query || card.textContent.toLowerCase().includes(query);
+        card.style.display = categoryMatch && searchMatch ? '' : 'none';
+      });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(item => item.classList.remove('active'));
+        button.classList.add('active');
+        activeFilter = button.dataset.filter;
+        applyFilter();
+      });
+    });
+
+    search?.addEventListener('input', applyFilter);
+  });
+</script>
+<script src="../js/whatsapp-widget.js"></script>
+</body>
+</html>

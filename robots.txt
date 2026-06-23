@@ -1,0 +1,18 @@
+# BHAR India - robots.txt
+# https://www.bharindia.com
+
+User-agent: *
+Allow: /
+
+# Backup and source files are not public search results.
+Disallow: /index%20-%20Copy.html
+Disallow: /pages/about%20-%20Copy.html
+Disallow: /pages/blog%20-%20Copy.html
+Disallow: /pages/products%20-%20Copy.html
+Disallow: /pages/projects%20-%20Copy%20(2).html
+Disallow: /pages/services%20-%20Copy.html
+Disallow: /css.zip
+Disallow: /pages/bhar-blog-pages-complete.zip
+Disallow: /images/pricing%20mail.docx
+
+Sitemap: https://www.bharindia.com/sitemap.xml
