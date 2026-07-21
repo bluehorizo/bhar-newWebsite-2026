@@ -94,6 +94,14 @@
 }
 .blog-article-content strong { color: var(--text); font-weight: 600; }
 .blog-article-content a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+.blog-article-content .btn {
+  color: #fff;
+  text-decoration: none;
+}
+.blog-article-content .btn:hover,
+.blog-article-content .btn:focus-visible {
+  color: #fff;
+}
 .blog-article-content blockquote {
   border-left: 4px solid var(--accent);
   background: var(--bg2);

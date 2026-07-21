@@ -425,7 +425,18 @@
           </div>
         </li>
 
-        <li><a href="pages/products.html">Products</a></li>
+        <li class="has-dropdown">
+          <a href="pages/products.html">
+            Products
+            <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <div class="dropdown-inner">
+              <a href="pages/applications.html"><span class="icon">APP</span> Applications</a>
+              <a href="pages/automations.html"><span class="icon">AUTO</span> Automations</a>
+            </div>
+          </div>
+        </li>
         <li><a href="pages/pricing.html">Pricing</a></li>
 
         
@@ -481,7 +492,7 @@
     
     <div class="hero-bg">
       <div class="hero-video-layer" aria-hidden="true">
-        <video class="hero-background-video" autoplay muted loop playsinline preload="metadata" poster="robotics-automation-poster.jpg" tabindex="-1">
+        <video class="hero-background-video" autoplay muted loop playsinline preload="auto" poster="images/robotics-automation-poster.jpg" tabindex="-1">
           <source src="142898-781314377_medium.mp4" type="video/mp4" />
         </video>
       </div>
@@ -634,7 +645,7 @@ Since 2019, we have been delivering innovative software products and technology 
   <section class="section bg-section" id="services">
     <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
     <div class="container">
-      <div class="section-header reveal">
+      <div class="section-header">
         <span class="section-tag">What We Offer</span>
         <h2 class="section-title">Automation &amp; Technology Services</h2>
         <p class="section-desc">From robotic process automation and ERP implementation to full-stack web development — we bring intelligent technology that moves your business forward.</p>
@@ -880,6 +891,74 @@ Since 2019, we have been delivering innovative software products and technology 
     </div>
   </div>
 
+  <!-- ═══════════ YOUTUBE VIDEO SHOWCASE ═══════════ -->
+  <section class="section youtube-showcase" id="videos" aria-labelledby="youtube-showcase-heading">
+    <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">BHAR On YouTube</span>
+        <h2 class="section-title" id="youtube-showcase-heading">Watch Our Automation Insights</h2>
+        <p class="section-desc">Explore BHAR videos, project explainers, automation ideas, and practical technology updates in one responsive video carousel.</p>
+      </div>
+
+      <div class="youtube-carousel" data-youtube-carousel>
+        <button class="youtube-nav youtube-prev" type="button" data-youtube-prev aria-label="Previous video">‹</button>
+
+        <div class="youtube-stage">
+          <article class="youtube-slide active" data-youtube-slide>
+            <div class="youtube-video-frame">
+              <div class="youtube-poster-overlay" style="background-image: url('https://img.youtube.com/vi/hpFmBTWisYc/hqdefault.jpg');" aria-label="Click to play video">
+                <button class="youtube-play-btn" type="button" aria-label="Play video">▶</button>
+              </div>
+              <iframe
+                src="https://www.youtube.com/embed/hpFmBTWisYc?start=94&rel=0&playsinline=1&origin=https%3A%2F%2Fwww.bharindia.com"
+                data-youtube-src="https://www.youtube.com/embed/hpFmBTWisYc?start=94&rel=0&playsinline=1&origin=https%3A%2F%2Fwww.bharindia.com"
+                data-youtube-id="hpFmBTWisYc"
+                title="Authentication and CRUD Operation for Invoice Generation Google Sheet + Flutter"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="youtube-video-copy">
+              <span class="section-tag">Featured Video</span>
+              <h3>Authentication and CRUD Operation for Invoice Generation</h3>
+              <p>Watch our latest featured video and learn how BHAR approaches automation, digital workflows, and practical business technology.</p>
+              <a href="https://www.youtube.com/watch?v=hpFmBTWisYc&t=94s" target="_blank" rel="noopener" class="btn btn-primary">Open on YouTube -&gt;</a>
+            </div>
+          </article>
+
+          <article class="youtube-slide" data-youtube-slide>
+            <div class="youtube-video-frame">
+              <div class="youtube-poster-overlay" style="background-image: url('https://img.youtube.com/vi/VsLrWo8a-Wc/hqdefault.jpg');" aria-label="Click to play video">
+                <button class="youtube-play-btn" type="button" aria-label="Play video">▶</button>
+              </div>
+              <iframe
+                src="https://www.youtube.com/embed/VsLrWo8a-Wc?rel=0&playsinline=1&origin=https%3A%2F%2Fwww.bharindia.com"
+                data-youtube-src="https://www.youtube.com/embed/VsLrWo8a-Wc?rel=0&playsinline=1&origin=https%3A%2F%2Fwww.bharindia.com"
+                data-youtube-id="VsLrWo8a-Wc"
+                title="Blue Horizon Automation Research"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="youtube-video-copy">
+              <span class="section-tag">Featured Video</span>
+              <h3>BHAR Automation Video</h3>
+              <p>Watch another BHAR video covering practical automation, business workflows, and technology ideas for growing teams.</p>
+              <a href="https://www.youtube.com/watch?v=VsLrWo8a-Wc" target="_blank" rel="noopener" class="btn btn-primary">Open on YouTube -&gt;</a>
+            </div>
+          </article>
+        </div>
+
+        <button class="youtube-nav youtube-next" type="button" data-youtube-next aria-label="Next video">›</button>
+
+        <div class="youtube-dots" data-youtube-dots aria-label="Video carousel pagination"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════ WHY CHOOSE US ═══════════ -->
   <section class="section" id="why">
     <div class="section-slogan-highlight">Innovate . Automate . Elevate</div>
@@ -1075,8 +1154,8 @@ Since 2019, we have been delivering innovative software products and technology 
         <div class="footer-social">
           <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
           <a href="https://www.facebook.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
-          <a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">𝕏</a>
-          <a href="https://youtu.be/hpFmBTWisYc?si=Z8lbj3WQz3ssQkwE" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
+          <a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">X</a>
+          <a href="https://www.youtube.com/@bluehorizonautomationresea4382" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1085,7 +1164,6 @@ Since 2019, we have been delivering innovative software products and technology 
         <a href="pages/services.html#webapp">Web Applications</a>
         <a href="pages/services.html#erp-implementation">ERP Implementation</a>
         <a href="pages/services.html#consulting">Website Development</a>
-        <a href="pages/projects.html">Our Projects</a>
       </div>
       <div class="footer-col">
         <h5>Products</h5>
@@ -1107,7 +1185,6 @@ Since 2019, we have been delivering innovative software products and technology 
         <a href="pages/about.html">About Us</a>
         <a href="pages/blog.html">Blog</a>
         <a href="pages/contact.html">Contact Us</a>
-        <a href="sitemap.xml">Sitemap</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1159,6 +1236,76 @@ Since 2019, we have been delivering innovative software products and technology 
         dashboard.hidden = true;
       }, 900);
     }, 100);
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('[data-youtube-carousel]');
+    if (!carousel) return;
+
+    const slides = Array.from(carousel.querySelectorAll('[data-youtube-slide]'));
+    const prevButton = carousel.querySelector('[data-youtube-prev]');
+    const nextButton = carousel.querySelector('[data-youtube-next]');
+    const dotsWrap = carousel.querySelector('[data-youtube-dots]');
+    let activeIndex = 0;
+
+    slides.forEach(function (slide) {
+      const overlay = slide.querySelector('.youtube-poster-overlay');
+      const iframe = slide.querySelector('iframe');
+      if (overlay && iframe) {
+        overlay.addEventListener('click', function () {
+          overlay.classList.add('hidden');
+          const videoSrc = iframe.dataset.youtubeSrc || iframe.getAttribute('src');
+          if (videoSrc) {
+            const separator = videoSrc.includes('?') ? '&' : '?';
+            iframe.src = videoSrc.includes('autoplay=1') ? videoSrc : videoSrc + separator + 'autoplay=1';
+          }
+        });
+      }
+    });
+
+    function showSlide(index) {
+      if (!slides.length) return;
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, slideIndex) {
+        const isActive = slideIndex === activeIndex;
+        slide.classList.toggle('active', isActive);
+        if (!isActive) {
+          const iframe = slide.querySelector('iframe');
+          if (iframe) {
+            const src = iframe.getAttribute('src');
+            if (src && src.includes('autoplay=1')) {
+              iframe.src = iframe.dataset.youtubeSrc || src.replace('&autoplay=1', '').replace('?autoplay=1', '');
+            }
+          }
+        }
+      });
+      if (dotsWrap) {
+        dotsWrap.querySelectorAll('.youtube-dot').forEach(function (dot, dotIndex) {
+          dot.classList.toggle('active', dotIndex === activeIndex);
+          dot.setAttribute('aria-selected', String(dotIndex === activeIndex));
+        });
+      }
+    }
+
+    slides.forEach(function (_, index) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'youtube-dot';
+      dot.setAttribute('aria-label', 'Show video ' + (index + 1));
+      dot.setAttribute('aria-selected', 'false');
+      dot.addEventListener('click', function () { showSlide(index); });
+      if (dotsWrap) dotsWrap.appendChild(dot);
+    });
+
+    if (slides.length < 2) {
+      if (prevButton) prevButton.disabled = true;
+      if (nextButton) nextButton.disabled = true;
+    }
+
+    if (prevButton) prevButton.addEventListener('click', function () { showSlide(activeIndex - 1); });
+    if (nextButton) nextButton.addEventListener('click', function () { showSlide(activeIndex + 1); });
+    showSlide(0);
   });
 </script>
 </body>

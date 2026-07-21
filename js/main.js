@@ -17,6 +17,121 @@ document.addEventListener('DOMContentLoaded', () => {
   handleNavScroll();
 
   /* =========================================================
+     FLOATING BACK LINK
+  ========================================================= */
+  const backLink = Array.from(document.querySelectorAll('a[href]')).find(link => /^Back to\s+/i.test(link.textContent.trim()));
+  if (backLink && !document.querySelector('.floating-back-link')) {
+    const floatingBackLink = document.createElement('a');
+    floatingBackLink.href = backLink.getAttribute('href');
+    floatingBackLink.className = 'floating-back-link';
+    floatingBackLink.textContent = backLink.textContent.trim();
+    floatingBackLink.setAttribute('aria-label', backLink.getAttribute('aria-label') || floatingBackLink.textContent);
+    document.body.appendChild(floatingBackLink);
+  }
+
+  /* =========================================================
+     BLOG DETAIL FOOTER
+  ========================================================= */
+  const currentPage = window.location.pathname.split('/').pop() || '';
+  const inPagesDirectory = window.location.pathname.replace(/\\/g, '/').includes('/pages/');
+  const partnersHref = inPagesDirectory ? 'partners.html' : 'pages/partners.html';
+
+  document.querySelectorAll('.nav-links a[href$="pricing.html"], .nav-links a[href$="pages/pricing.html"]').forEach(link => {
+    link.closest('li')?.remove();
+  });
+
+  document.querySelectorAll('.mobile-nav a[href$="pricing.html"], .mobile-nav a[href$="pages/pricing.html"]').forEach(link => {
+    link.remove();
+  });
+
+  if (!document.querySelector('.nav-links a[href$="partners.html"]')) {
+    const navLinks = document.querySelector('.nav-links');
+    if (navLinks) {
+      const partnersItem = document.createElement('li');
+      partnersItem.innerHTML = '<a href="' + partnersHref + '">Our Partner</a>';
+      navLinks.appendChild(partnersItem);
+    }
+  }
+
+  if (!document.querySelector('.mobile-nav a[href$="partners.html"]')) {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileContactLink = document.querySelector('.mobile-nav .btn-primary-mobile');
+    if (mobileNav) {
+      const partnersMobileLink = document.createElement('a');
+      partnersMobileLink.href = partnersHref;
+      partnersMobileLink.textContent = 'Our Partner';
+      if (mobileContactLink) {
+        mobileContactLink.before(partnersMobileLink);
+      } else {
+        mobileNav.appendChild(partnersMobileLink);
+      }
+    }
+  }
+
+  const simpleBlogFooter = currentPage.startsWith('blog-') && document.querySelector('.site-footer .footer-bottom') && !document.querySelector('.site-footer .footer-grid');
+  if (simpleBlogFooter) {
+    const footer = document.querySelector('.site-footer');
+    footer.setAttribute('role', 'contentinfo');
+    footer.innerHTML = `
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="nav-logo" aria-label="BHAR India Home">
+              <img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" />
+              <div class="nav-logo-text"><span class="brand-name">Blue Horizon</span><span class="brand-sub">Automation Research</span></div>
+            </a>
+            <p>Delivering intelligent automation and software solutions that drive measurable business outcomes. Built for India, designed for scale.</p>
+            <div class="footer-social" aria-label="Social Media">
+              <a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
+              <a href="https://www.facebook.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
+              <a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">X</a>
+              <a href="https://www.youtube.com/@bluehorizonautomationresea4382" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="services.html#rpa">Automation Solutions</a>
+            <a href="services.html#webapp">Web Applications</a>
+            <a href="services.html#erp-implementation">ERP Implementation</a>
+            <a href="services.html#consulting">Website Development</a>
+          </div>
+          <div class="footer-col">
+            <h5>Products</h5>
+            <a href="applications.html">Applications</a>
+            <a href="automations.html">Automations</a>
+            <a href="crm-lead-management.html">CRM &amp; Lead Management</a>
+            <a href="clinic-management-system.html">Clinic Management</a>
+            <a href="sap-report-generation.html">SAP Report Generation</a>
+            <a href="intelligent-invoice-processing.html">Invoice Processing</a>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="about.html">About Us</a>
+            <a href="partners.html">Partners</a>
+            <a href="blog.html">Blog</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Blue Horizon Automation Research. All rights reserved.</p>
+          <p><a href="blog.html">Back to Blog</a></p>
+        </div>
+      </div>
+    `;
+  }
+
+  document.querySelectorAll('.site-footer a').forEach(link => {
+    const label = link.textContent.trim().toLowerCase();
+    const href = link.getAttribute('href') || '';
+    if (label === 'our projects' || label === 'sitemap' || href.endsWith('sitemap.xml')) {
+      link.remove();
+    }
+  });
+
+  /* =========================================================
      DROPDOWN MENUS
      Approach: CSS handles hover (with invisible bridge gap).
      JS adds click-based toggle for keyboard/touch users, and
@@ -67,18 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNav = document.getElementById('mobileNav');
   const mobileSubmenuButtons = [];
   const mobileProducts = [
-    { hash: 'sap-report', icon: '📊', label: 'SAP Report Generation' },
-    { hash: 'gst-calculation', icon: '🧮', label: 'GST Calculation' },
-    { hash: 'crm', icon: '💼', label: 'CRM & Lead Management' },
-    { hash: 'clinic', icon: '🏥', label: 'Clinic Management' },
-    { hash: 'pos-captain', icon: '🧾', label: 'POS + Captain' },
-    { hash: 'retail-pos', icon: '🛒', label: 'POS System' },
-    { hash: 'sap', icon: '⚙️', label: 'Smart SAP Automation' },
-    { hash: 'invoice', icon: '📄', label: 'Invoice Processing' },
-    { hash: 'sales-erp', icon: '🔁', label: 'Sales to ERP' },
-    { hash: 'assets', icon: '📦', label: 'Asset Management' },
-    { hash: 'property', icon: '🏢', label: 'Property Dealer System' },
-    { hash: 'ekyc', icon: '🛡️', label: 'E-KYC Automation' }
+    { href: 'applications.html', label: 'Applications' },
+    { href: 'automations.html', label: 'Automations' }
   ];
 
   function setMobileSubmenu(button, open) {
@@ -128,15 +233,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const existingProductLink = submenuItems.find(item =>
           item.matches?.('a[href*="products.html"]')
         );
-        const productPageHref = existingProductLink
-          ? existingProductLink.getAttribute('href').split('#')[0]
-          : (window.location.pathname.includes('/pages/') ? 'products.html' : 'pages/products.html');
+        const productPagePrefix = window.location.pathname.includes('/pages/') ? '' : 'pages/';
 
         submenuItems.forEach(item => item.remove());
         mobileProducts.forEach(product => {
           const link = document.createElement('a');
-          link.href = `${productPageHref}#${product.hash}`;
-          link.innerHTML = `<span aria-hidden="true">${product.icon}</span> ${product.label}`;
+          link.href = productPagePrefix + product.href;
+          link.textContent = product.label;
           submenu.appendChild(link);
         });
       } else {
