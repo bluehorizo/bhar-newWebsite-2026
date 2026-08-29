@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="about.html">About Us</a>
             <a href="partners.html">Partners</a>
             <a href="blog.html">Blog</a>
-            <a href="pricing.html">Pricing</a>
             <a href="contact.html">Contact Us</a>
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
@@ -129,6 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (label === 'our projects' || label === 'sitemap' || href.endsWith('sitemap.xml')) {
       link.remove();
     }
+  });
+
+  document.querySelectorAll('a[href$="pricing.html"], a[href$="/pricing.html"], a[href$="pages/pricing.html"]').forEach(link => {
+    link.remove();
   });
 
   /* =========================================================

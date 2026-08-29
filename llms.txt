@@ -1,0 +1,50 @@
+# Blue Horizon Automation Research (BHAR India)
+
+Blue Horizon Automation Research (BHAR India) is an Indian technology company that helps businesses improve operations through robotic process automation, ERP implementation, custom web applications, and website development.
+
+## Main Services
+
+- Robotic Process Automation services: https://www.bharindia.com/pages/rpa-automation-services.html
+- Custom Web Application Development: https://www.bharindia.com/pages/custom-web-application-development.html
+- ERP Implementation Services: https://www.bharindia.com/pages/erp-implementation-services.html
+- Website Development Services: https://www.bharindia.com/pages/website-development-services.html
+
+## Main Company Pages
+
+- Homepage: https://www.bharindia.com/
+- Services hub: https://www.bharindia.com/pages/services.html
+- Products and solutions hub: https://www.bharindia.com/pages/products.html
+- About BHAR India: https://www.bharindia.com/pages/about.html
+- Projects: https://www.bharindia.com/pages/projects.html
+- Contact: https://www.bharindia.com/pages/contact.html
+
+## Published Solution Pages
+
+- CRM & Lead Management: https://www.bharindia.com/pages/crm-lead-management.html
+- Clinic Management System: https://www.bharindia.com/pages/clinic-management-system.html
+- POS + Captain System: https://www.bharindia.com/pages/pos-captain-system.html
+- Retail POS System: https://www.bharindia.com/pages/retail-pos-system.html
+- Asset Management System: https://www.bharindia.com/pages/asset-management-system.html
+- Property Dealer Management System: https://www.bharindia.com/pages/property-dealer-management-system.html
+- SAP Report Generation: https://www.bharindia.com/pages/sap-report-generation.html
+- GST Calculation Automation: https://www.bharindia.com/pages/gst-calculation-automation.html
+- Smart SAP Process Automation: https://www.bharindia.com/pages/smart-sap-process-automation.html
+- Intelligent Invoice Processing: https://www.bharindia.com/pages/intelligent-invoice-processing.html
+- Sales to ERP Workflow Automation: https://www.bharindia.com/pages/sales-to-erp-workflow-automation.html
+- E-KYC Government Portal Automation: https://www.bharindia.com/pages/ekyc-government-portal-automation.html
+
+## Useful Resource Pages
+
+- Blog hub: https://www.bharindia.com/pages/blog.html
+- How RPA Works in ERP Systems: https://www.bharindia.com/pages/blog-rpa-erp-automation.html
+- Invoice Automation with AI-OCR and RPA: https://www.bharindia.com/pages/blog-invoice-automation-ai-ocr.html
+- The Scope of AI Agents in Modern Business Applications: https://www.bharindia.com/pages/blog-ai-agents-business-apps.html
+- Popular App Development Frameworks: https://www.bharindia.com/pages/blog-app-development-frameworks.html
+
+## Contact Details
+
+- Company: Blue Horizon Automation Research (BHAR India)
+- Website: https://www.bharindia.com
+- Email: customerdelight@bhar.co.in
+- Phone: +91 87226 29900
+- Service area: India
