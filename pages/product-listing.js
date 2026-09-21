@@ -13,7 +13,10 @@
       <div class="product-features">
         ${item.features.slice(0, 3).map(feature => `<span>${feature}</span>`).join('')}
       </div>
-      <a href="${item.key}.html" class="card-link">View Details -&gt;</a>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 10px;">
+        <a href="${item.key}.html" class="card-link" style="font-weight: 700;">View Details -&gt;</a>
+        ${item.blogUrl ? `<a href="${item.blogUrl}" class="card-link" style="color: var(--primary); font-size: 13.5px; font-weight: 600;">Read Blog -&gt;</a>` : ''}
+      </div>
     </article>
   `).join('');
 })();

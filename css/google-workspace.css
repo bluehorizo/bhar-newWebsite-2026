@@ -1,0 +1,524 @@
+/* ============================================================
+   BHAR India – Google Workspace Solutions & Pricing Stylesheet
+   google-workspace.css | Integrated with BHAR Design System
+   ============================================================ */
+
+/* ── Hero App Badge Row ── */
+.gw-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 34px;
+}
+.gw-app-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  transition: var(--transition);
+}
+.gw-app-pill:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+.gw-app-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* ── Apps Grid Section ── */
+.gw-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+.gw-app-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.gw-app-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+.gw-app-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--gradient-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+.gw-app-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.gw-app-card p {
+  font-size: 13.5px;
+  color: var(--text-sec);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Business Email Spotlight Box ── */
+.gw-email-spotlight {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(30, 53, 112, 0.08), rgba(196, 98, 45, 0.06));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  margin-top: 32px;
+}
+.gw-email-demo-box {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+.gw-email-chip {
+  display: inline-block;
+  background: var(--gradient);
+  color: #fff;
+  font-family: var(--ff-head);
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 50px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+.gw-email-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.gw-email-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: var(--text);
+  font-weight: 500;
+}
+.gw-email-benefits li::before {
+  content: '✓';
+  color: #10B981;
+  font-weight: 800;
+}
+
+/* ── Google Workspace Plans Pricing Cards ── */
+.gw-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+  align-items: stretch;
+}
+.gw-plan-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.gw-plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--border-hover);
+}
+.gw-plan-card.popular {
+  border-color: var(--accent);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.02);
+}
+.gw-plan-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+  background: var(--bg3);
+  color: var(--text-sec);
+}
+.gw-plan-badge.popular-badge {
+  background: var(--accent);
+  color: #fff;
+}
+.gw-plan-badge.india-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.gw-plan-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+.gw-plan-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.gw-plan-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.45;
+  min-height: 38px;
+}
+.gw-plan-pricing-tag {
+  font-family: var(--ff-head);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 12px 0 4px;
+}
+.gw-plan-specs {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 12.5px;
+}
+.gw-plan-spec-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: var(--text-sec);
+}
+.gw-plan-spec-item:last-child { margin-bottom: 0; }
+.gw-plan-spec-item strong { color: var(--text); }
+.gw-plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+.gw-plan-features li {
+  font-size: 13px;
+  color: var(--text-sec);
+  padding: 5px 0 5px 20px;
+  position: relative;
+  line-height: 1.45;
+}
+.gw-plan-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 12px;
+}
+.gw-plan-card .btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* ── Full Comparison Table ── */
+.gw-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+  margin-top: 36px;
+  -webkit-overflow-scrolling: touch;
+}
+.gw-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  text-align: left;
+}
+.gw-comparison-table th,
+.gw-comparison-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  vertical-align: middle;
+}
+.gw-comparison-table th {
+  background: var(--bg2);
+  font-family: var(--ff-head);
+  font-weight: 700;
+  color: var(--text);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.gw-comparison-table th:first-child,
+.gw-comparison-table td:first-child {
+  font-weight: 600;
+  color: var(--text);
+  width: 240px;
+  position: sticky;
+  left: 0;
+  background: var(--bg-card);
+  z-index: 1;
+}
+.gw-comparison-table th:first-child {
+  background: var(--bg2);
+  z-index: 3;
+}
+.gw-comparison-table tr:hover td {
+  background: rgba(30, 53, 112, 0.03);
+}
+.gw-check {
+  color: #10B981;
+  font-weight: 800;
+  font-size: 16px;
+}
+.gw-cross {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ── Pooled Storage Educational Cards ── */
+.gw-storage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+.gw-storage-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.gw-storage-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+.gw-storage-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.gw-storage-math {
+  font-family: var(--ff-head);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 10px 0;
+}
+.gw-storage-card p {
+  font-size: 14px;
+  color: var(--text-sec);
+  margin: 0;
+}
+
+/* ── Gemini AI Feature Grid ── */
+.gw-ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+.gw-ai-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition);
+}
+.gw-ai-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.gw-ai-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.gw-ai-card p {
+  font-size: 14px;
+  color: var(--text-sec);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Google Meet Limits Grid ── */
+.gw-meet-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+.gw-meet-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+}
+.gw-meet-plan {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.gw-meet-number {
+  font-family: var(--ff-head);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+.gw-meet-label {
+  font-size: 12px;
+  color: var(--text-sec);
+}
+
+/* ── Partner Services Grid ── */
+.gw-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+.gw-service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: var(--transition);
+}
+.gw-service-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.gw-service-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-soft);
+  border-radius: 10px;
+}
+.gw-service-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.gw-service-card p {
+  font-size: 13px;
+  color: var(--text-sec);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Migration Steps & Sources ── */
+.gw-migration-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 38px;
+  margin-top: 32px;
+}
+.gw-sources-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+.gw-source-badge {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Responsive Adjustments ── */
+@media (max-width: 1200px) {
+  .gw-plans-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .gw-plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gw-email-spotlight {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .gw-storage-grid,
+  .gw-ai-grid {
+    grid-template-columns: 1fr;
+  }
+  .gw-meet-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .gw-plans-grid {
+    grid-template-columns: 1fr;
+  }
+  .gw-meet-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gw-email-benefits {
+    grid-template-columns: 1fr;
+  }
+}

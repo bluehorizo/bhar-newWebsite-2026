@@ -52,27 +52,32 @@
   }
 
   if (item.faqs?.length) {
-    const visibleFaqCount = 7;
+    const visibleFaqCount = 10;
     const faqAnchor = document.querySelector('.product-blog-cta') || document.querySelector('.product-use-cases');
     faqAnchor.insertAdjacentHTML('afterend', `
-      <div class="product-faq" aria-labelledby="product-faq-heading">
+      <div class="product-faq" aria-labelledby="product-faq-heading" itemscope itemtype="https://schema.org/FAQPage">
         <div class="product-faq-header">
-          <span class="section-tag">FAQ</span>
-          <h2 id="product-faq-heading">${item.title} FAQs</h2>
-          <p>Common questions about using the ${item.title.toLowerCase()} in an organization.</p>
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 id="product-faq-heading">${item.title} FAQs: Features, Workflows &amp; Implementation</h2>
+          <p>Key technical, operational, and business questions about deploying the ${item.title.toLowerCase()} in an organization.</p>
         </div>
         <div class="product-faq-list">
           ${item.faqs.map((faq, index) => `
-            <details class="product-faq-item${index >= visibleFaqCount ? ' product-faq-hidden' : ''}">
-              <summary>${faq.question}</summary>
-              <div class="product-faq-answer">
-                <p>${faq.answer}</p>
+            <details class="product-faq-item${index >= visibleFaqCount ? ' product-faq-hidden' : ''}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <summary itemprop="name">${faq.question}</summary>
+              <div class="product-faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">${faq.answer}</p>
                 ${faq.points?.length ? `<ul>${faq.points.map(point => `<li>${point}</li>`).join('')}</ul>` : ''}
               </div>
             </details>
           `).join('')}
         </div>
-        ${item.faqs.length > visibleFaqCount ? `<button type="button" class="btn btn-secondary product-faq-load-more" data-faq-load-more>Load more questions</button>` : ''}
+        ${item.faqs.length > visibleFaqCount ? `<button type="button" class="btn btn-secondary product-faq-load-more" data-faq-load-more>Load more questions (${item.faqs.length - visibleFaqCount} more)</button>` : ''}
+        <div class="product-faq-footer" style="margin-top: 24px; padding: 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); text-align: center;">
+          <p style="margin-bottom: 12px; font-size: 15px; color: var(--text);">Want to explore deep-dive use cases, controls, and workflows for <strong>${item.title}</strong>?</p>
+          ${item.blogUrl ? `<a href="${item.blogUrl}" class="btn btn-primary btn-sm">Read Related Project Blog on ${item.title} -&gt;</a>&nbsp;&nbsp;` : ''}
+          <a href="contact.html" class="btn btn-secondary btn-sm">Speak With Our Solution Experts</a>
+        </div>
       </div>
     `);
 
@@ -80,6 +85,27 @@
       document.querySelectorAll('.product-faq-hidden').forEach(faq => faq.classList.remove('product-faq-hidden'));
       event.currentTarget.remove();
     });
+
+    try {
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": item.faqs.slice(0, 10).map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer + (faq.points?.length ? ' ' + faq.points.join(', ') : '')
+          }
+        }))
+      };
+      const schemaScript = document.createElement('script');
+      schemaScript.type = 'application/ld+json';
+      schemaScript.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(schemaScript);
+    } catch (e) {
+      console.warn('Schema injection error:', e);
+    }
   }
 
   document.body.insertAdjacentHTML('beforeend', '<footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo" aria-label="BHAR India Home"><img src="../images/logo.png" alt="BHAR India Logo" class="nav-logo-img" /><div class="nav-logo-text"><span class="brand-name">Blue Horizon</span><span class="brand-sub">Automation Research</span></div></a><p>Delivering intelligent automation and software solutions that drive measurable business outcomes. Built for India, designed for scale.</p><div class="footer-social" aria-label="Social Media"><a href="https://www.linkedin.com/company/blue-horizon-automation" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a><a href="https://www.facebook.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a><a href="https://www.twitter.com/bharindia" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">𝕏</a><a href="https://www.youtube.com/@bluehorizonautomationresea4382" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶</a></div></div><div class="footer-col"><h5>Services</h5><a href="services.html#rpa">Automation Solutions</a><a href="services.html#webapp">Web Applications</a><a href="services.html#erp-implementation">ERP Implementation</a><a href="services.html#consulting">Website Development</a><a href="projects.html">Our Projects</a></div><div class="footer-col"><h5>Products</h5><a href="sap-report-generation.html">SAP Report Generation</a><a href="gst-calculation-automation.html">GST Calculation</a><a href="crm-lead-management.html">CRM &amp; Lead Management</a><a href="clinic-management-system.html">Clinic Management</a><a href="pos-captain-system.html">POS + Captain</a><a href="retail-pos-system.html">POS System</a><a href="smart-sap-process-automation.html">Smart SAP Automation</a><a href="intelligent-invoice-processing.html">Invoice Processing</a><a href="sales-to-erp-workflow-automation.html">Sales to ERP</a><a href="asset-management-system.html">Asset Management</a><a href="property-dealer-management-system.html">Property Dealer System</a><a href="ekyc-government-portal-automation.html">E-KYC Automation</a></div><div class="footer-col"><h5>Company</h5><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a><a href="../sitemap.xml">Sitemap</a></div></div><div class="footer-bottom"><p>©2024 Blue Horizon Automation Research. All rights reserved.</p><p>Made with ❤️ in India &nbsp;|&nbsp; <a href="mailto:customerdelight@bhar.co.in">customerdelight@bhar.co.in</a></p></div></div></footer><button id="back-to-top" aria-label="Back to top">↑</button>');
