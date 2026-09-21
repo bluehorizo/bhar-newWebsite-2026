@@ -45,60 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     link.remove();
   });
 
-  // Re-route any legacy partners.html nav links directly to the Google Workspace partner page
-  document.querySelectorAll('.nav-links a[href*="partners.html"], .mobile-nav a[href*="partners.html"]').forEach(link => {
-    link.href = workspaceHref;
-    link.textContent = 'Our Partner';
-    if (isWorkspace) link.classList.add('active');
+  // Hide Partner links from navigation
+  document.querySelectorAll('.nav-links a[href*="partners.html"], .mobile-nav a[href*="partners.html"], .nav-partner-link, .mobile-partner-link').forEach(link => {
+    link.closest('li')?.remove();
+    link.remove();
   });
-
-  // Ensure top-level desktop navbar has "Our Partner"
-  {
-    const navLinksEl = document.querySelector('.nav-links');
-    if (navLinksEl) {
-      const topLinks = Array.from(navLinksEl.children)
-        .filter(el => el.tagName === 'LI')
-        .map(li => li.querySelector('a'))
-        .filter(Boolean);
-      let topPartnerLink = topLinks.find(a => /our partner/i.test(a.textContent.trim()) || a.classList.contains('nav-partner-link'));
-      if (!topPartnerLink) {
-        const partnersItem = document.createElement('li');
-        partnersItem.innerHTML = '<a href="' + workspaceHref + '" class="nav-partner-link' + (isWorkspace ? ' active' : '') + '">Our Partner</a>';
-        navLinksEl.appendChild(partnersItem);
-      } else {
-        topPartnerLink.href = workspaceHref;
-        if (isWorkspace) {
-          topPartnerLink.classList.add('active');
-        }
-      }
-    }
-  }
-
-  // Ensure mobile navigation has "Our Partner"
-  {
-    const mobileNavEl = document.querySelector('.mobile-nav');
-    if (mobileNavEl) {
-      const mobileLinks = Array.from(mobileNavEl.querySelectorAll('a'));
-      let mobilePartnerLink = mobileLinks.find(a => /our partner/i.test(a.textContent.trim()) || a.classList.contains('mobile-partner-link'));
-      if (!mobilePartnerLink) {
-        const partnersMobileLink = document.createElement('a');
-        partnersMobileLink.className = 'mobile-partner-link' + (isWorkspace ? ' active' : '');
-        partnersMobileLink.href = workspaceHref;
-        partnersMobileLink.textContent = 'Our Partner';
-        const mobileContactLink = mobileNavEl.querySelector('.btn-primary-mobile');
-        if (mobileContactLink) {
-          mobileContactLink.before(partnersMobileLink);
-        } else {
-          mobileNavEl.appendChild(partnersMobileLink);
-        }
-      } else {
-        mobilePartnerLink.href = workspaceHref;
-        if (isWorkspace) {
-          mobilePartnerLink.classList.add('active');
-        }
-      }
-    }
-  }
 
   const simpleBlogFooter = currentPage.startsWith('blog-') && document.querySelector('.site-footer .footer-bottom') && !document.querySelector('.site-footer .footer-grid');
   if (simpleBlogFooter) {
