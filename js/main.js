@@ -45,11 +45,133 @@ document.addEventListener('DOMContentLoaded', () => {
     link.remove();
   });
 
-  // Hide Partner links from navigation
-  document.querySelectorAll('.nav-links a[href*="partners.html"], .mobile-nav a[href*="partners.html"], .nav-partner-link, .mobile-partner-link').forEach(link => {
-    link.closest('li')?.remove();
-    link.remove();
-  });
+  /* =========================================================
+     CLOUD NAVIGATION DROPDOWN (Google, Microsoft, AWS)
+     Ensures every page has the identical Cloud dropdown in desktop
+     and identical Cloud section in mobile navigation.
+  ========================================================= */
+  const isCloudPage = currentPage === 'partners.html' || currentPage === 'microsoft.html' || currentPage === 'aws.html';
+  const isGoogle = currentPage === 'partners.html';
+  const isMicrosoft = currentPage === 'microsoft.html';
+  const isAws = currentPage === 'aws.html';
+
+  const cloudBaseHref = inPagesDirectory ? 'partners.html' : 'pages/partners.html';
+  const googleHref = inPagesDirectory ? 'partners.html#google' : 'pages/partners.html#google';
+  const microsoftHref = inPagesDirectory ? 'microsoft.html' : 'pages/microsoft.html';
+  const awsHref = inPagesDirectory ? 'aws.html' : 'pages/aws.html';
+
+  function setupCloudNavigation() {
+    // 1. Desktop Nav (.nav-links)
+    const navLinksEl = document.querySelector('.nav-links');
+    if (navLinksEl) {
+      let cloudLi = Array.from(navLinksEl.children).find(li => {
+        const text = li.textContent.trim().toLowerCase();
+        const a = li.querySelector('a');
+        const href = a ? (a.getAttribute('href') || '') : '';
+        return text.startsWith('cloud') || text.startsWith('partner') ||
+               href.includes('partners.html') || href.includes('microsoft.html') || href.includes('aws.html');
+      });
+
+      const cloudDropdownHTML = `
+        <a href="${cloudBaseHref}" class="${isCloudPage ? 'active' : ''}">Cloud <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+        <div class="dropdown-menu"><div class="dropdown-inner">
+          <a href="${googleHref}" class="${isGoogle ? 'active' : ''}"><span class="icon">&#x1F537;</span> Google</a>
+          <a href="${microsoftHref}" class="${isMicrosoft ? 'active' : ''}"><span class="icon">&#x1F539;</span> Microsoft</a>
+          <a href="${awsHref}" class="${isAws ? 'active' : ''}"><span class="icon">&#x2601;&#xFE0F;</span> AWS</a>
+        </div></div>
+      `;
+
+      if (cloudLi) {
+        cloudLi.className = 'has-dropdown';
+        cloudLi.innerHTML = cloudDropdownHTML;
+      } else {
+        const newLi = document.createElement('li');
+        newLi.className = 'has-dropdown';
+        newLi.innerHTML = cloudDropdownHTML;
+        const aboutItem = Array.from(navLinksEl.children).find(li => li.querySelector('a[href*="about.html"]'));
+        if (aboutItem) {
+          aboutItem.before(newLi);
+        } else {
+          navLinksEl.appendChild(newLi);
+        }
+      }
+    }
+
+    // 2. Mobile Nav (.mobile-nav)
+    const mobileNavEl = document.querySelector('.mobile-nav');
+    if (mobileNavEl) {
+      // Remove any standalone legacy "Partners" link or old cloud links
+      mobileNavEl.querySelectorAll('a').forEach(a => {
+        const t = a.textContent.trim().toLowerCase();
+        const h = a.getAttribute('href') || '';
+        if (t === 'partners' || (h.endsWith('partners.html') && !h.includes('#google'))) {
+          a.remove();
+        }
+      });
+
+      // Find or create Cloud section in mobile nav
+      let cloudLabel = Array.from(mobileNavEl.children).find(el => 
+        el.classList.contains('mobile-section-label') && el.textContent.trim().toLowerCase() === 'cloud'
+      );
+
+      // Remove any existing cloud items following cloudLabel to ensure fresh 3 items
+      if (cloudLabel) {
+        let sibling = cloudLabel.nextElementSibling;
+        while (sibling && (sibling.tagName === 'A' && (
+          sibling.getAttribute('href')?.includes('partners.html') ||
+          sibling.getAttribute('href')?.includes('microsoft.html') ||
+          sibling.getAttribute('href')?.includes('aws.html') ||
+          sibling.textContent.includes('Google') ||
+          sibling.textContent.includes('Microsoft') ||
+          sibling.textContent.includes('AWS')
+        ))) {
+          const next = sibling.nextElementSibling;
+          sibling.remove();
+          sibling = next;
+        }
+      } else {
+        const divider = document.createElement('div');
+        divider.className = 'mobile-divider';
+        cloudLabel = document.createElement('div');
+        cloudLabel.className = 'mobile-section-label';
+        cloudLabel.textContent = 'Cloud';
+
+        const aboutLink = mobileNavEl.querySelector('a[href*="about.html"]');
+        const contactBtn = mobileNavEl.querySelector('.btn-primary-mobile');
+        const target = aboutLink || contactBtn;
+
+        if (target) {
+          target.before(divider);
+          target.before(cloudLabel);
+        } else {
+          mobileNavEl.appendChild(divider);
+          mobileNavEl.appendChild(cloudLabel);
+        }
+      }
+
+      // Insert the 3 items right after cloudLabel
+      const gLink = document.createElement('a');
+      gLink.href = googleHref;
+      gLink.innerHTML = '&#x1F537; Google';
+      if (isGoogle) gLink.classList.add('active');
+
+      const mLink = document.createElement('a');
+      mLink.href = microsoftHref;
+      mLink.innerHTML = '&#x1F539; Microsoft';
+      if (isMicrosoft) mLink.classList.add('active');
+
+      const aLink = document.createElement('a');
+      aLink.href = awsHref;
+      aLink.innerHTML = '&#x2601;&#xFE0F; AWS';
+      if (isAws) aLink.classList.add('active');
+
+      cloudLabel.after(aLink);
+      cloudLabel.after(mLink);
+      cloudLabel.after(gLink);
+    }
+  }
+
+  setupCloudNavigation();
 
   const simpleBlogFooter = currentPage.startsWith('blog-') && document.querySelector('.site-footer .footer-bottom') && !document.querySelector('.site-footer .footer-grid');
   if (simpleBlogFooter) {
@@ -90,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="footer-col">
             <h5>Company</h5>
             <a href="about.html">About Us</a>
-            <a href="partners.html">Partners</a>
+            <a href="partners.html">Cloud</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact Us</a>
             <a href="privacy-policy.html">Privacy Policy</a>

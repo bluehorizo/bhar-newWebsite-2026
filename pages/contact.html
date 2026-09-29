@@ -83,7 +83,15 @@
             <a href="automations.html"><span class="icon">AUTO</span> Automations</a>
           </div></div>
         </li>
-        <li><a href="about.html">About Us</a></li>
+                <li class="has-dropdown">
+          <a href="partners.html">Cloud <svg class="chevron-icon" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg></a>
+          <div class="dropdown-menu"><div class="dropdown-inner">
+            <a href="partners.html#google"><span class="icon">&#x1F537;</span> Google</a>
+            <a href="microsoft.html"><span class="icon">&#x1F539;</span> Microsoft</a>
+            <a href="aws.html"><span class="icon">&#x2601;&#xFE0F;</span> AWS</a>
+          </div></div>
+        </li>
+<li><a href="about.html">About Us</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
       <div class="nav-right">
@@ -111,6 +119,11 @@
     <a href="products.html#insurance">&#x1F6E1;&#xFE0F; RPA Insurance</a>
     <div class="mobile-divider"></div>
     <a href="projects.html">Projects</a>
+        <div class="mobile-divider"></div>
+    <div class="mobile-section-label">Cloud</div>
+    <a href="partners.html#google">&#x1F537; Google</a>
+    <a href="microsoft.html">&#x1F539; Microsoft</a>
+    <a href="aws.html">&#x2601;&#xFE0F; AWS</a>
     <a href="about.html">About Us</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html" class="btn-primary-mobile">Contact Us</a>
@@ -279,6 +292,8 @@
                 <label for="subject">Subject <span aria-hidden="true">*</span></label>
                 <select id="subject" name="subject" class="form-control" required aria-required="true">
                   <option value="" disabled selected>Select a subject…</option>
+                  <option value="Google Workspace">Google Workspace (Special 1st-Year Discount)</option>
+                  <option value="Microsoft Services">Microsoft Services (Early Interest)</option>
                   <option value="RPA Automation">RPA / Process Automation</option>
                   <option value="Web Application">Web Application Development</option>
                   <option value="ERP Implementation">ERP Implementation</option>
@@ -462,6 +477,31 @@
   const formStatus = document.getElementById('formStatus');
 
   if (!form) return;
+
+  // URL query parameter pre-fill
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const planParam = urlParams.get('plan');
+    const subjectParam = urlParams.get('subject');
+    const inquiryParam = urlParams.get('inquiry');
+    const subjectSelect = document.getElementById('subject');
+    const messageArea = document.getElementById('message');
+
+    if (planParam || (subjectParam && subjectParam.toLowerCase().includes('google workspace'))) {
+      if (subjectSelect) subjectSelect.value = 'Google Workspace';
+      if (messageArea && !messageArea.value) {
+        const planName = planParam ? planParam.replace(/-/g, ' ').toUpperCase() : 'Google Workspace';
+        messageArea.value = `Hi BHAR India team, I am interested in the special 1st-year discount for the ${planName} plan. Please share pricing and onboarding details.`;
+      }
+    } else if (inquiryParam?.includes('microsoft') || (subjectParam && subjectParam.toLowerCase().includes('microsoft'))) {
+      if (subjectSelect) subjectSelect.value = 'Microsoft Services';
+      if (messageArea && !messageArea.value) {
+        messageArea.value = 'Hi BHAR India team, I would like to register early interest for your upcoming Microsoft Services (Microsoft 365, Teams & Azure).';
+      }
+    }
+  } catch (err) {
+    console.error('URL parse error:', err);
+  }
 
   // Basic field validation
   function validateForm() {

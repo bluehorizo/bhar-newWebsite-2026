@@ -522,3 +522,449 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── 4-Column Clean Grid for Google Workspace Plans ── */
+.gw-plans-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 32px;
+  align-items: stretch;
+}
+.gw-plan-card-clean {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+.gw-plan-card-clean:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary);
+}
+.gw-plan-card-clean.popular {
+  border: 2px solid var(--accent);
+  box-shadow: 0 10px 30px rgba(196, 98, 45, 0.16);
+  position: relative;
+}
+.gw-plan-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.gw-plan-card-clean .gw-plan-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.gw-plan-card-clean .gw-plan-desc {
+  font-size: 13px;
+  color: var(--text-sec);
+  line-height: 1.5;
+  min-height: 40px;
+  margin-bottom: 16px;
+}
+.gw-plan-card-clean .gw-promo-price-box {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 0 0 18px 0;
+  text-align: center;
+}
+.gw-plan-card-clean.popular .gw-promo-price-box {
+  background: rgba(196, 98, 45, 0.08);
+  border-color: rgba(196, 98, 45, 0.35);
+}
+.gw-plan-specs-clean {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  font-size: 12.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gw-plan-specs-clean .spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-sec);
+}
+.gw-plan-specs-clean .spec-row strong {
+  color: var(--text);
+}
+.gw-features-list-clean {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+.gw-features-list-clean li {
+  font-size: 13px;
+  color: var(--text-sec);
+  padding: 5px 0 5px 22px;
+  position: relative;
+  line-height: 1.45;
+}
+.gw-features-list-clean li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10B981;
+  font-weight: 800;
+  font-size: 13px;
+}
+.gw-plan-card-clean .btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  font-weight: 700;
+}
+@media (max-width: 1100px) {
+  .gw-plans-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .gw-plans-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Partner Page Promo & Urgency Banner ── */
+.partner-promo-banner {
+  background: linear-gradient(135deg, rgba(30, 53, 112, 0.95), rgba(196, 98, 45, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-xl);
+  padding: 38px 36px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(30, 53, 112, 0.2);
+  margin-top: -30px;
+  margin-bottom: 48px;
+  z-index: 5;
+}
+.partner-promo-banner::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.partner-promo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.partner-hurry-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff5722;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(255, 87, 34, 0.4);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); box-shadow: 0 4px 14px rgba(255, 87, 34, 0.4); }
+  50% { transform: scale(1.03); box-shadow: 0 6px 20px rgba(255, 87, 34, 0.7); }
+}
+.partner-promo-title {
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.partner-promo-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 920px;
+  margin-bottom: 24px;
+}
+.partner-promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 22px 0 28px;
+}
+.partner-promo-feature {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.partner-promo-feature-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.partner-promo-feature-text strong {
+  display: block;
+  font-size: 14.5px;
+  color: #ffffff;
+}
+.partner-promo-feature-text span {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.82);
+}
+.partner-next-roadmap-callout {
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partner-next-roadmap-callout p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.5;
+}
+.partner-next-roadmap-callout strong {
+  color: #ffeb3b;
+}
+
+/* ── Discount Pricing Tag & Badges ── */
+.gw-discount-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 50px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.gw-promo-price-box {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin: 12px 0 10px;
+  text-align: center;
+}
+.gw-promo-price-main {
+  font-family: var(--ff-head);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #059669;
+  line-height: 1.2;
+}
+.gw-promo-price-sub {
+  font-size: 11.5px;
+  color: var(--text-sec);
+  font-weight: 600;
+}
+
+/* ── Microsoft Services Roadmap Section ── */
+.ms-roadmap-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: 36px;
+  transition: var(--transition);
+}
+.ms-roadmap-card:hover {
+  border-color: #0078d4;
+  box-shadow: var(--shadow-xl);
+}
+.ms-roadmap-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #f25022 0%, #7fba00 33%, #00a4ef 66%, #ffb900 100%);
+}
+.ms-roadmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.ms-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 120, 212, 0.1);
+  color: #0078d4;
+  border: 1px solid rgba(0, 120, 212, 0.25);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.ms-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+.ms-service-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  transition: var(--transition);
+}
+.ms-service-item:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+.ms-icon {
+  font-size: 26px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.ms-service-item h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.ms-service-item p {
+  font-size: 12.5px;
+  color: var(--text-sec);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Direct Cloud Specialist Contact Highlight Box ── */
+.cloud-contact-highlight {
+  background: linear-gradient(135deg, rgba(30, 53, 112, 0.08), rgba(16, 185, 129, 0.09));
+  border: 2px solid rgba(16, 185, 129, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 30px 34px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+}
+.cloud-contact-content {
+  max-width: 580px;
+}
+.cloud-contact-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #10B981;
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.cloud-contact-content h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.cloud-contact-content p {
+  font-size: 14.5px;
+  color: var(--text-sec);
+  line-height: 1.55;
+  margin: 0;
+}
+.cloud-contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn-phone-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary);
+  color: #ffffff !important;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(30, 53, 112, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.btn-phone-highlight:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 53, 112, 0.35);
+}
+.btn-whatsapp-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #ffffff !important;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.btn-whatsapp-highlight:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+.contact-phone-number {
+  font-family: var(--ff-head);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+
